@@ -1,0 +1,68 @@
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg, $fontid: '') {
+    $src: null;
+
+    @if $fontid == '' {
+        $fontid: $name;
+    }
+
+    $extmods: (
+            eot: "?#iefix",
+            svg: "#" + $fontid
+    );
+
+    $formats: (
+            otf: "opentype",
+            ttf: "truetype"
+    );
+
+    $isEot: false;
+
+    @each $ext in $exts {
+        @if $ext == 'eot' {
+            $isEot: true;
+        }
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        @if $isEot {
+            src: url(quote($path + ".eot"));
+        }
+        src: $src;
+    }
+}
+
+$break-menu: 760px;
+
+@mixin break-min($pixels) {
+    @media screen and (min-width: $pixels) {
+        @content;
+    }
+}
+
+@mixin break-max($pixels) {
+    @media screen and (max-width: $pixels) {
+        @content;
+    }
+}
+
+@mixin break-max-h($pixels) {
+    @media screen and (max-height: $pixels) {
+        @content;
+    }
+}
+
+@mixin break-max-height($pixels) {
+    @media screen and (max-height: $pixels) {
+        @content;
+    }
+}

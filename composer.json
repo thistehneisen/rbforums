@@ -1,0 +1,19 @@
+{
+  "license": "MIT",
+  "require": {
+    "vlucas/phpdotenv": "^2.4"
+  },
+  "scripts": {
+    "build": "gulp build"
+  },
+  "autoload": {
+    "classmap": [
+      "libs/",
+      "app/commands/",
+      "app/libraries/",
+      "app/controllers/",
+      "app/controllers/Admin/",
+      "app/models/"
+    ]
+  }
+}

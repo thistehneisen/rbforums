@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteBase /
+
+#git nah
+RewriteRule "^(.*/)?\.git/" - [F,L]
+
+RewriteCond %{HTTP_HOST} ^www.maximavalentindiena.lv [NC]
+RewriteRule ^(.*)$ http://maximavalentindiena.lv/$1 [L,R=301,NC]
+
+# Redirect Trailing Slashes...
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Handle Front Controller...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]

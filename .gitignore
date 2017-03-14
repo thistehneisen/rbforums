@@ -1,0 +1,29 @@
+app/config/local
+vendor
+
+node_modules
+
+uploads/*
+!uploads/.gitignore
+composer.lock
+
+.idea
+
+maintenance
+
+storage/*/*
+!storage/.gitignore
+!storage/*/.gitignore
+
+#specific files
+*.log
+
+# OS Generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+/.env
