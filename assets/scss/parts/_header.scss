@@ -1,0 +1,42 @@
+header.top-header {
+    width: 100%;
+    background: #FFFFFF;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+    nav {
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+                    color: #5d5d5d;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    transition: all .2s;
+                    margin: 0 22px;
+                    line-height: 64px;
+                    font-weight: bold;
+
+
+                    &:hover, &.active {
+                        color: #3396d9;
+                    }
+                }
+            }
+        }
+    }
+}

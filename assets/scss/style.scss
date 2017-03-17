@@ -1,11 +1,31 @@
 @import "mixins/mixins-master";
+@import "mixins/animations";
+
+@include font-face(MyriadPro, "../fonts/MyriadPro-Regular", normal, normal);
+@include font-face(MyriadPro, "../fonts/MyriadPro-Bold", bold, normal);
+@include font-face(MyriadPro, "../fonts/MyriadPro-BoldIt", bold, italic);
+@include font-face(MyriadPro, "../fonts/MyriadPro-It", normal, italic);
+@include font-face(MyriadPro, "../fonts/MyriadPro-Light", 300, normal);
+@include font-face(MyriadPro, "../fonts/MyriadPro-Semibold", 500, normal);
+@include font-face(DINPro, "../fonts/DINPro-Light", 300, normal);
 
 html, body {
-    font-family: sans-serif;
+    font-family: MyriadPro, sans-serif;
     width: 100%;
     margin: 0 auto;
+    min-width: 1200px;
 }
 
 .clearfix {
     clear: both;
 }
+
+@import "parts/home";
+@import "parts/programme";
+@import "parts/suppliers";
+@import "parts/location";
+@import "parts/organizer";
+@import "parts/speakers";
+@import "parts/forms";
+@import "parts/header";
+@import "parts/registration";

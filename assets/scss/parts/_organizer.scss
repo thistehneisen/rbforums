@@ -1,0 +1,29 @@
+section.organizer {
+    width: 100%;
+    background: #002c9d; /* Old browsers */
+    background: linear-gradient(90deg,  #002c9d 0%,#1f6cc3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002c9d', endColorstr='#1f6cc3',GradientType=1 );
+    margin: 0 auto;
+
+    .content {
+        max-width: 1154px;
+        width: 100%;
+        margin: 0 auto;
+        color: #FFFFFF;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        padding-top: 55px;
+        padding-bottom: 55px;
+
+        p {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 290px;
+    background: #FFFFFF url(../img/eu-logo.jpg) 50% 50% no-repeat;
+}

@@ -39,6 +39,14 @@ class Form {
         return $html;
     }
 
+    public static function checkbox($name, $value, $checked = false, $attributes = [])
+    {
+        if($checked) {
+            $attributes['checked'] = 'checked';
+        }
+        return self::input($name, $value, array_merge(['type' => 'checkbox'], $attributes));
+    }
+
     public static function text($name, $value, $attributes = [])
     {
         return self::input($name, $value, array_merge(['type' => 'text'], $attributes));
@@ -78,7 +86,7 @@ class Form {
 
     public static function button($name, $value, $attributes = [])
     {
-        $attrs = ['name' => $name, 'id' => $name];
+        $attrs = ['name' => $name, 'id' => $name, 'type' => 'button'];
         $attrs = array_merge($attrs, $attributes);
         $html = '<button';
         foreach ($attrs as $key => $val) {
@@ -86,6 +94,10 @@ class Form {
         }
         $html .= '>' . $value . '</button>';
         return $html;
+    }
+
+    public static function submitButton($name, $value, $attributes = []) {
+        return Form::button($name, $value, array_merge(['type' => 'submit'], $attributes));
     }
 
     public static function select($name, $data = [], $default = null, $attributes = [])

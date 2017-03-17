@@ -205,6 +205,14 @@ function arrayGet( $array, $key, $default = null ) {
 	return $default;
 }
 
+
+/**
+ * @param array $array
+ * @param string $key
+ * @param mixed $value
+ *
+ * @return array
+ */
 function arraySet( &$array, $key, $value ) {
 	if ( is_null( $key ) ) {
 		return $array = $value;
@@ -222,6 +230,10 @@ function arraySet( &$array, $key, $value ) {
 	return $array;
 }
 
+/**
+ * @param array $array
+ * @param string|array $keys
+ */
 function arrayForget( &$array, $keys ) {
 	$original =& $array;
 
@@ -250,246 +262,7 @@ function arrayForget( &$array, $keys ) {
  * @return mixed|string
  */
 function slug( $str, $use_dot = true ) {
-
-	$str = preg_replace( '|\&[^;]+;|U', '', $str );
-	$str = strip_tags( $str );
-	$str = mb_strtolower( $str, 'UTF-8' );
-
-	$str = trim( $str );
-
-	// garumziimju aizvaakshana
-
-	$search = array(
-		'Ā',
-		'Č',
-		'Ē',
-		'Ģ',
-		'Ī',
-		'Ķ',
-		'Ļ',
-		'Ņ',
-		'Ō',
-		'Ŗ',
-		'Š',
-		'Ū',
-		'Ž',
-		'ā',
-		'č',
-		'ē',
-		'ģ',
-		'ī',
-		'ķ',
-		'ļ',
-		'ņ',
-		'ō',
-		'ŗ',
-		'š',
-		'ū',
-		'ž',
-		' ',
-		','
-	);
-	if ( $use_dot ) {
-		$search = array_merge( $search, array( '.' ) );
-	} else {
-		$search = array_merge( $search, array( '-' ) );
-	}
-
-	$replace = array(
-		'a',
-		'c',
-		'e',
-		'g',
-		'i',
-		'k',
-		'l',
-		'n',
-		'o',
-		'r',
-		's',
-		'u',
-		'z',
-		'a',
-		'c',
-		'e',
-		'g',
-		'i',
-		'k',
-		'l',
-		'n',
-		'o',
-		'r',
-		's',
-		'u',
-		'z'
-	);
-	$replace = array_merge( $replace, array( '_', '_', '_' ) );
-	$str     = str_replace( $search, $replace, $str );
-	// kirilicas paarveidoshana
-
-	$kirilica = array(
-		'а',
-		'б',
-		'в',
-		'г',
-		'д',
-		'е',
-		'ё',
-		'ж',
-		'з',
-		'и',
-		'й',
-		'к',
-		'л',
-		'м',
-		'н',
-		'о',
-		'п',
-		'р',
-		'с',
-		'т',
-		'у',
-		'ф',
-		'х',
-		'ц',
-		'ч',
-		'ш',
-		'щ',
-		'ъ',
-		'ы',
-		'ь',
-		'э',
-		'ю',
-		'я',
-		'А',
-		'Б',
-		'В',
-		'Г',
-		'Д',
-		'Е',
-		'Ё',
-		'Ж',
-		'З',
-		'И',
-		'Й',
-		'К',
-		'Л',
-		'М',
-		'Н',
-		'О',
-		'П',
-		'Р',
-		'С',
-		'Т',
-		'У',
-		'Ф',
-		'Х',
-		'Ц',
-		'Ч',
-		'Ш',
-		'Щ',
-		'Ъ',
-		'Ы',
-		'Ь',
-		'Э',
-		'Ю',
-		'Я'
-	);
-
-	$latin = array(
-		'a',
-		'b',
-		'v',
-		'g',
-		'd',
-		'e',
-		'jo',
-		'zh',
-		'z',
-		'i',
-		'j',
-		'k',
-		'l',
-		'm',
-		'n',
-		'o',
-		'p',
-		'r',
-		's',
-		't',
-		'u',
-		'f',
-		'h',
-		'c',
-		'ch',
-		'sh',
-		'sch',
-		'-',
-		'y',
-		'-',
-		'je',
-		'ju',
-		'ja',
-		'a',
-		'b',
-		'v',
-		'g',
-		'd',
-		'e',
-		'jo',
-		'zh',
-		'z',
-		'i',
-		'j',
-		'k',
-		'l',
-		'm',
-		'n',
-		'o',
-		'p',
-		'r',
-		's',
-		't',
-		'u',
-		'f',
-		'h',
-		'c',
-		'ch',
-		'sh',
-		's',
-		't',
-		'u',
-		'f',
-		'h',
-		'c',
-		'ch',
-		'sh',
-		'sch',
-		'-',
-		'y',
-		'-',
-		'je',
-		'ju',
-		'ja'
-	);
-
-	$str = str_replace( $kirilica, $latin, $str );
-
-	if ( $use_dot ) {
-		$str = preg_replace( '|[^a-z0-9_\-]|', '', $str );
-	} else {
-		$str = preg_replace( '|[^a-z0-9_\.\(\)]|', '', $str );
-	}
-
-	while ( strpos( $str, '--' ) !== false ) {
-		$str = str_replace( '--', '-', $str );
-	}
-
-	if ( substr( $str, - 1 ) == '-' ) {
-		$str = substr( $str, 0, - 1 );
-	}
-
-	return $str;
+    return Str::slug($str, $use_dot);
 }
 
 
@@ -568,6 +341,9 @@ function sendDwonloadHeaders( $filename ) {
 	header( "Content-Transfer-Encoding: binary" );
 }
 
+/**
+ * @return bool
+ */
 function authorized() {
 	return Session::get( 'soc_user', false );
 }
@@ -585,6 +361,9 @@ if(!function_exists('env')) {
 	}
 }
 
+/**
+ * @return string
+ */
 function subDirPrefix()
 {
 	$rewriteBase = Router::rawRewriteBase();
@@ -592,4 +371,334 @@ function subDirPrefix()
 		return '/'.$rewriteBase[0];
 	}
 	return '';
+}
+
+/**
+ * @param string $key
+ * @param string $default
+ *
+ * @return string
+ */
+function old($key, $default = '') {
+    return Input::get($key, $default, 'POST');
+}
+
+/**
+ * @return array
+ */
+function countryList() {
+    return array(
+        "AF" => "Afghanistan",
+        "AL" => "Albania",
+        "DZ" => "Algeria",
+        "AS" => "American Samoa",
+        "AD" => "Andorra",
+        "AO" => "Angola",
+        "AI" => "Anguilla",
+        "AQ" => "Antarctica",
+        "AG" => "Antigua and Barbuda",
+        "AR" => "Argentina",
+        "AM" => "Armenia",
+        "AW" => "Aruba",
+        "AU" => "Australia",
+        "AT" => "Austria",
+        "AZ" => "Azerbaijan",
+        "BS" => "Bahamas",
+        "BH" => "Bahrain",
+        "BD" => "Bangladesh",
+        "BB" => "Barbados",
+        "BY" => "Belarus",
+        "BE" => "Belgium",
+        "BZ" => "Belize",
+        "BJ" => "Benin",
+        "BM" => "Bermuda",
+        "BT" => "Bhutan",
+        "BO" => "Bolivia",
+        "BA" => "Bosnia and Herzegovina",
+        "BW" => "Botswana",
+        "BV" => "Bouvet Island",
+        "BR" => "Brazil",
+        "BQ" => "British Antarctic Territory",
+        "IO" => "British Indian Ocean Territory",
+        "VG" => "British Virgin Islands",
+        "BN" => "Brunei",
+        "BG" => "Bulgaria",
+        "BF" => "Burkina Faso",
+        "BI" => "Burundi",
+        "KH" => "Cambodia",
+        "CM" => "Cameroon",
+        "CA" => "Canada",
+        "CT" => "Canton and Enderbury Islands",
+        "CV" => "Cape Verde",
+        "KY" => "Cayman Islands",
+        "CF" => "Central African Republic",
+        "TD" => "Chad",
+        "CL" => "Chile",
+        "CN" => "China",
+        "CX" => "Christmas Island",
+        "CC" => "Cocos [Keeling] Islands",
+        "CO" => "Colombia",
+        "KM" => "Comoros",
+        "CG" => "Congo - Brazzaville",
+        "CD" => "Congo - Kinshasa",
+        "CK" => "Cook Islands",
+        "CR" => "Costa Rica",
+        "HR" => "Croatia",
+        "CU" => "Cuba",
+        "CY" => "Cyprus",
+        "CZ" => "Czech Republic",
+        "CI" => "Côte d’Ivoire",
+        "DK" => "Denmark",
+        "DJ" => "Djibouti",
+        "DM" => "Dominica",
+        "DO" => "Dominican Republic",
+        "NQ" => "Dronning Maud Land",
+        "DD" => "East Germany",
+        "EC" => "Ecuador",
+        "EG" => "Egypt",
+        "SV" => "El Salvador",
+        "GQ" => "Equatorial Guinea",
+        "ER" => "Eritrea",
+        "EE" => "Estonia",
+        "ET" => "Ethiopia",
+        "FK" => "Falkland Islands",
+        "FO" => "Faroe Islands",
+        "FJ" => "Fiji",
+        "FI" => "Finland",
+        "FR" => "France",
+        "GF" => "French Guiana",
+        "PF" => "French Polynesia",
+        "TF" => "French Southern Territories",
+        "FQ" => "French Southern and Antarctic Territories",
+        "GA" => "Gabon",
+        "GM" => "Gambia",
+        "GE" => "Georgia",
+        "DE" => "Germany",
+        "GH" => "Ghana",
+        "GI" => "Gibraltar",
+        "GR" => "Greece",
+        "GL" => "Greenland",
+        "GD" => "Grenada",
+        "GP" => "Guadeloupe",
+        "GU" => "Guam",
+        "GT" => "Guatemala",
+        "GG" => "Guernsey",
+        "GN" => "Guinea",
+        "GW" => "Guinea-Bissau",
+        "GY" => "Guyana",
+        "HT" => "Haiti",
+        "HM" => "Heard Island and McDonald Islands",
+        "HN" => "Honduras",
+        "HK" => "Hong Kong SAR China",
+        "HU" => "Hungary",
+        "IS" => "Iceland",
+        "IN" => "India",
+        "ID" => "Indonesia",
+        "IR" => "Iran",
+        "IQ" => "Iraq",
+        "IE" => "Ireland",
+        "IM" => "Isle of Man",
+        "IL" => "Israel",
+        "IT" => "Italy",
+        "JM" => "Jamaica",
+        "JP" => "Japan",
+        "JE" => "Jersey",
+        "JT" => "Johnston Island",
+        "JO" => "Jordan",
+        "KZ" => "Kazakhstan",
+        "KE" => "Kenya",
+        "KI" => "Kiribati",
+        "KW" => "Kuwait",
+        "KG" => "Kyrgyzstan",
+        "LA" => "Laos",
+        "LV" => "Latvia",
+        "LB" => "Lebanon",
+        "LS" => "Lesotho",
+        "LR" => "Liberia",
+        "LY" => "Libya",
+        "LI" => "Liechtenstein",
+        "LT" => "Lithuania",
+        "LU" => "Luxembourg",
+        "MO" => "Macau SAR China",
+        "MK" => "Macedonia",
+        "MG" => "Madagascar",
+        "MW" => "Malawi",
+        "MY" => "Malaysia",
+        "MV" => "Maldives",
+        "ML" => "Mali",
+        "MT" => "Malta",
+        "MH" => "Marshall Islands",
+        "MQ" => "Martinique",
+        "MR" => "Mauritania",
+        "MU" => "Mauritius",
+        "YT" => "Mayotte",
+        "FX" => "Metropolitan France",
+        "MX" => "Mexico",
+        "FM" => "Micronesia",
+        "MI" => "Midway Islands",
+        "MD" => "Moldova",
+        "MC" => "Monaco",
+        "MN" => "Mongolia",
+        "ME" => "Montenegro",
+        "MS" => "Montserrat",
+        "MA" => "Morocco",
+        "MZ" => "Mozambique",
+        "MM" => "Myanmar [Burma]",
+        "NA" => "Namibia",
+        "NR" => "Nauru",
+        "NP" => "Nepal",
+        "NL" => "Netherlands",
+        "AN" => "Netherlands Antilles",
+        "NT" => "Neutral Zone",
+        "NC" => "New Caledonia",
+        "NZ" => "New Zealand",
+        "NI" => "Nicaragua",
+        "NE" => "Niger",
+        "NG" => "Nigeria",
+        "NU" => "Niue",
+        "NF" => "Norfolk Island",
+        "KP" => "North Korea",
+        "VD" => "North Vietnam",
+        "MP" => "Northern Mariana Islands",
+        "NO" => "Norway",
+        "OM" => "Oman",
+        "PC" => "Pacific Islands Trust Territory",
+        "PK" => "Pakistan",
+        "PW" => "Palau",
+        "PS" => "Palestinian Territories",
+        "PA" => "Panama",
+        "PZ" => "Panama Canal Zone",
+        "PG" => "Papua New Guinea",
+        "PY" => "Paraguay",
+        "YD" => "People's Democratic Republic of Yemen",
+        "PE" => "Peru",
+        "PH" => "Philippines",
+        "PN" => "Pitcairn Islands",
+        "PL" => "Poland",
+        "PT" => "Portugal",
+        "PR" => "Puerto Rico",
+        "QA" => "Qatar",
+        "RO" => "Romania",
+        "RU" => "Russia",
+        "RW" => "Rwanda",
+        "RE" => "Réunion",
+        "BL" => "Saint Barthélemy",
+        "SH" => "Saint Helena",
+        "KN" => "Saint Kitts and Nevis",
+        "LC" => "Saint Lucia",
+        "MF" => "Saint Martin",
+        "PM" => "Saint Pierre and Miquelon",
+        "VC" => "Saint Vincent and the Grenadines",
+        "WS" => "Samoa",
+        "SM" => "San Marino",
+        "SA" => "Saudi Arabia",
+        "SN" => "Senegal",
+        "RS" => "Serbia",
+        "CS" => "Serbia and Montenegro",
+        "SC" => "Seychelles",
+        "SL" => "Sierra Leone",
+        "SG" => "Singapore",
+        "SK" => "Slovakia",
+        "SI" => "Slovenia",
+        "SB" => "Solomon Islands",
+        "SO" => "Somalia",
+        "ZA" => "South Africa",
+        "GS" => "South Georgia and the South Sandwich Islands",
+        "KR" => "South Korea",
+        "ES" => "Spain",
+        "LK" => "Sri Lanka",
+        "SD" => "Sudan",
+        "SR" => "Suriname",
+        "SJ" => "Svalbard and Jan Mayen",
+        "SZ" => "Swaziland",
+        "SE" => "Sweden",
+        "CH" => "Switzerland",
+        "SY" => "Syria",
+        "ST" => "São Tomé and Príncipe",
+        "TW" => "Taiwan",
+        "TJ" => "Tajikistan",
+        "TZ" => "Tanzania",
+        "TH" => "Thailand",
+        "TL" => "Timor-Leste",
+        "TG" => "Togo",
+        "TK" => "Tokelau",
+        "TO" => "Tonga",
+        "TT" => "Trinidad and Tobago",
+        "TN" => "Tunisia",
+        "TR" => "Turkey",
+        "TM" => "Turkmenistan",
+        "TC" => "Turks and Caicos Islands",
+        "TV" => "Tuvalu",
+        "UM" => "U.S. Minor Outlying Islands",
+        "PU" => "U.S. Miscellaneous Pacific Islands",
+        "VI" => "U.S. Virgin Islands",
+        "UG" => "Uganda",
+        "UA" => "Ukraine",
+        "SU" => "Union of Soviet Socialist Republics",
+        "AE" => "United Arab Emirates",
+        "GB" => "United Kingdom",
+        "US" => "United States",
+        "ZZ" => "Unknown or Invalid Region",
+        "UY" => "Uruguay",
+        "UZ" => "Uzbekistan",
+        "VU" => "Vanuatu",
+        "VA" => "Vatican City",
+        "VE" => "Venezuela",
+        "VN" => "Vietnam",
+        "WK" => "Wake Island",
+        "WF" => "Wallis and Futuna",
+        "EH" => "Western Sahara",
+        "YE" => "Yemen",
+        "ZM" => "Zambia",
+        "ZW" => "Zimbabwe",
+        "AX" => "Åland Islands",
+    );
+}
+
+function getCountry($code) {
+    $code = strtoupper($code);
+    return arrayGet(countryList(), $code, '');
+}
+
+/**
+ * @return array
+ */
+function industryList() {
+    return [
+        'Agriculture, forestry and fishing' => 'Agriculture, forestry and fishing',
+        'Architecture and design' => 'Architecture and design',
+        'Construction' => 'Construction',
+        'Consulting' => 'Consulting',
+        'Culture and arts' => 'Culture and arts',
+        'Education and science' => 'Education and science',
+        'Energetics' => 'Energetics',
+        'Finance and insurance' => 'Finance and insurance',
+        'Food and catering' => 'Food and catering',
+        'Health and social care' => 'Health and social care',
+        'IT and communications' => 'IT and communications',
+        'Law and regulations' => 'Law and regulations',
+        'Manufacturing, production industry' => 'Manufacturing, production industry',
+        'Media and information services' => 'Media and information services',
+        'Medicine, pharmaceuticals and healthcare' => 'Medicine, pharmaceuticals and healthcare',
+        'Public sector, NGOs' => 'Public sector, NGOs',
+        'Real estate' => 'Real estate',
+        'Public sector, government' => 'Public sector, government',
+        'Tourism, accommodation and food service' => 'Tourism, accommodation and food service',
+        'Transportation, logistics and storage' => 'Transportation, logistics and storage',
+        'Wholesale and retail trade' => 'Wholesale and retail trade',
+        'Other' => 'Other',
+    ];
+}
+
+/**
+ * New lines to paragraphs (helper function for Str::nl2p())
+ *
+ * @param string $string
+ * @param bool $lineBreaks - if true, two line breaks becomes p and one becomes br.
+ * @param bool $xml - if XHTML, tan need to set to true
+ *
+ * @return string
+ */
+function nl2p($string, $lineBreaks = true, $xml = false) {
+    return Str::nl2p($string, $lineBreaks, $xml);
 }

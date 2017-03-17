@@ -17,13 +17,22 @@ let rename = require('gulp-rename');
 let browserSync = require('browser-sync').create();
 let webpack = require('webpack-stream');
 
-let prefix = '';
+let prefix = 'forum';
+
+function swallowError (error) {
+
+    // If you want details of the error in the console
+    console.log(error.toString());
+
+    this.emit('end')
+}
 
 gulp.task('sass', function () {
     return gulp.src('assets/scss/*.scss')
         .pipe(plumber())
         .pipe(sourceMaps.init())
         .pipe(sass())
+        .on('error', swallowError)
         .pipe(autoprefixer({
             browsers: ['> 0.5%'],
             cascade: false
@@ -113,6 +122,7 @@ gulp.task('js', function () {
                 ]
             }
         }))
+        .on('error', swallowError)
         .pipe(gulp.dest('assets/js/'));
 });
 

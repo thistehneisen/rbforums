@@ -1,14 +1,16 @@
 <?php
 
-//Router::rewriteBase('messenger-bot');
+Router::rewriteBase('forum');
 
 Router::detect('app', 'AppController');
 
 Router::detect('admin', 'AdminController');
-Router::get('/start', 'AppController@getStart');
-Router::get('/rules', 'AppController@getRules');
-Router::get('/{perm}', 'AppController@getTest');
-Router::post('/{perm}', 'AppController@postTest');
+Router::post('validate-code', 'AppController@validate');
+Router::post('register-form-1', 'AppController@registerOne');
+Router::post('register-form-2', 'AppController@registerTwo');
+Router::post('register-form-3', 'AppController@registerThree');
+Router::post('register-form-4', 'AppController@registerContacts');
+Router::get('/(.*)', 'AppController@getIndex');
 Router::get('/', 'AppController@getIndex');
 
 //Router::missing('AppController@getHuman');

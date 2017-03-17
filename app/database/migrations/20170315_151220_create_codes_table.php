@@ -1,0 +1,31 @@
+<?php return [
+    'on' => [
+        'table' => 'codes',
+        'fields' => [
+            'id' => 'increments',
+            'content' => 'string:4|nullable',
+            'used' => 'integer:4|default:0',
+            'pubstamp' => 'integer:4|default:0',
+            'ip' => 'string:250|nullable',
+        ],
+        'index' => [
+            'key' => [
+                'content'
+            ],
+        ],
+        'posthook' => function() {
+            $codes = ['3BVB', 'N2TH', 'F58I', '5110', 'V3DA', 'G18A', 'U02H', 'W5J0', 'GEB3', 'H5KW', 'ATEF', 'VGGR', 'KT10', 'V9BQ', 'AD77', 'IQ7Z', '5J3M', 'OOJZ', 'HYED', 'FV4Z', 'P50K', 'FBAQ', 'PIX8', '947E', 'NB1C', 'ZLBH', 'KQUZ', 'LYYA', '4YVK', 'A6AZ', 'O77X', 'CFC0', 'QDCQ', 'ZO8J', 'E2I0', '1GB6', 'F6QP', 'C1P1', '9WYM', 'CAM2', 'OZSN', 'N162', '4O25', '5DCL', 'K3BX', '40YE', 'XW09', '7MBV', 'L4J9', '5QB9', 'EDFK', 'RS5B', 'VH80', 'H6EE', '3ENB', '1Z7N', '4QW9', 'G7JV', 'LZGD', 'RMON', '3XOL', '42Z8', 'HNJJ', 'MR6Q', 'H30Y', 'AKUW', 'JB9B', 'YYZ1', 'WNM0', 'PM97', '9SQW', 'JXN1', '0N0B', '8V7R', '6H35', 'G26C', 'PTDF', 'GMNP', 'FDMZ', 'B90B', 'W1M4', 'WUW3', 'C08S', '2F5S', '9J8P', '6VFL', '91LK', 'AMV7', 'NHCK', 'C8OO', '9XHB', 'DM4N', '6CDC', '7SYG', 'UJ15', '5WDT', 'EPDR', 'Y2F7', 'ZWJC', 'JNZP', 'ZC17', '5ZO0', 'JP5O', 'MIH1', '8VS6', 'X7EX', '4X9N', 'K9CK', 'MERS', 'EGTX', '5YLS', 'H3UQ', 'YMWW', 'UBTZ', '83MT', 'DZE0', 'D5TR', 'MMPR', 'KAK2', 'EESD', '1P9W', '12V9', '6H3J', 'HHJU', 'NCM9', 'YB1J', 'MMM0', '0FD2', '5NY6', 'QTGW', 'BJGS', '10MO', 'D9YC', 'KZW6', 'LI7M', 'YLO3', '8M9Z', 'GQVR', '9BKB', 'C7ZP', 'GX10', 'XX7J', 'GE5E', '0UH8', 'HR7X', 'H3PR', 'F92R', 'G2GX', 'ZIYX', 'F5GV', 'KMAK', 'HRTY', 'J1W0', '4MSJ', 'WUBD', 'WSAW', 'A8TQ', 'EAMY', 'XWJE', 'OCD7', 'D98I', 'V02R', 'UD5R', '6FNH', 'NH71', 'RU0O', 'RJ3F', 'VGN9', 'PVRL', 'VTDQ', '7IHD', 'Y4UL', 'L2ND', 'WO1N', '7533', 'LQCB', 'L4XH', 'XA74', 'TOIR', 'TCDE', 'E1RB', 'PTZW', 'Y20K', 'TDVE', 'HSVF', '33JX', 'R2OL', 'E2ZT', '3R5S', 'L4PK', '7Q40', '30FK', 'TBZX', 'EJU6', 'LJR0', 'LRUP', 'JZI4', '47PB', 'XTC1', 'URLN', '3LKH', '4FOQ', 'YGRK', '7L9Q', 'LRVQ', 'ZK1X', 'EEY9', '6JW9', '5HQA', 'XF0V', 'VSF2', 'EPTZ', 'GPPF', 'ARCO', '6BXC', 'VUL0', 'CCA9', 'RB5M', '3LPH', 'BIHR', '877I', 'ZK75', 'V5HQ', '03RC', 'F1M6', 'CSSG', 'EHYP', '0FH8', 'MORL', '9YR5', '38W4', 'BNGQ', 'P3X2', 'WQIA', '7G08', 'VHHI', '684G', '7VLB', '4HFG', '5W7U', 'Z4WW', 'UF72', 'V7AR', 'PRAV', '0EC7', 'AXIE', 'FXUK', 'T2ET', '6BP0', 'QX3L', '4DDT', '5NP6', '21DC', 'ZWRE', 'UMZO', 'ODIU', 'O8VF', '5Y09', 'CE3I', '1TO4', 'V2GV', 'Z89U', 'U8II', 'M1DB', '98QE', '7ROK', '5S27', 'LRCH', 'USCU', '0MOV', 'V7DH', '8QSI', 'ZJX7', 'BLRH', 'EUO0', 'M0HG', 'TUBU', 'GZPB', '73TG', 'UMYU', '5W1G', 'ITXW', 'NMW9', 'NEQH', '82CP', '2109', '5UP0', 'GOUL', 'KW22', 'P0ZC', 'NWMA', 'ADSJ', 'F48H', '69RB', '3HCJ', '565Q', '28TS', '8S4V', 'OR6Z', '5YIL', '2R39', '0UL4', 'BXOH', '3T76', '20YA', 'S36H', 'VDG1', 'BYME', 'QPOQ', 'K9VV', '6JCA', 'DKHF', 'KGQD', 'JWVF', '9BGL', 'A300', 'SORC', 'XM83', '6LEK', '5V0Q', 'BQ3V', 'NZBX', 'ARIL', 'VJLN', '8C05', 'Z995', 'UOQZ', 'JQQV', 'GUQ4', 'T113', 'TKOO', '3ACC', 'NDIM', 'MSSH', 'GIHZ', '97VP', '1LTU', 'NVYH', 'FN6J', 'YIVL', 'WD7J', '500L', 'IHLR', 'PGHQ', '2BLQ', '6K7L', '8D46', 'W0RS', 'DZBJ', 'ZB4H', 'TQ9I', '7R9A', '2U09', 'F7UN', 'LZTH', '0L9D', 'KLWJ', 'W11Q', 'SA80', '2HA4', 'CBDS', 'J8F4', '89L8', 'UVMF', 'GJYD', 'L03D', 'ABED', 'TOH6', 'ZVYI', '4DNC', 'N8KI', '47XK', 'QWXB', 'W1O7', 'C2K6', 'R2CR', 'XAA1', 'OXEC', '6ZUA', '6SUW', 'OS7K', 'TWS6', 'ZCCR', 'FPID', '0SFO', 'QT0W', 'SV6Y', 'N1VC', 'U2WN', 'ZPUY', '26PH', 'W8UW', '19LR', '2MOV', 'HUU5', 'WPHQ', 'REDR', '38P5', 'EFNB', 'OH7P', 'RSHU', 'F5PW', '0K1W', '9JM1', 'X0S0', '8I6N', 'XUYL', 'C6B3', 'ZSYE', 'YNBY', '8DUH', 'WHIT', 'IBUR', 'T1FQ', 'VEC7', 'KOBK', 'G9ZE', 'XAD5', 'O8MK', 'Q5E8', 'G909', 'AF06', '0PZH', 'YYWV', '990X', 'INH8', 'SWH8', '5HHG', 'WINQ', 'V15V', 'Q4DO', '2AJB', 'JK91', '7RAZ', 'NR8T', '8QA5', '8XW3', 'Y1ZO', '5CC8', 'MWK6', 'GT8O', 'LIN8', 'AV2I', 'LCOU', 'AKX8', 'LWXR', '9AZW', '6K3N', 'ECBZ', 'UY84', 'UANG', 'NBAX', 'V86G', '437E', 'D7BK', 'SE76', 'QI5L', 'HDQC', 'OESC', 'P3AL', 'BG1G', 'K9VY', 'H6I9', 'LQFC', '8LXQ', 'ZO3O', '2W0R', 'ZACB', 'RERB', 'ON96', 'TSFE', 'IVQR', 'GOIG', 'CL4F', 'H46H', 'FJT6', 'YLIN', '8ST1', 'K9G2', '47TL', 'WB18', 'X6NF', 'AUXQ', 'EQWD', 'BE0J', '6TKR', '21T7', '8NT5', 'ZVEX', '12CC', 'W92B', 'ZYOA', 'DOUK', 'IFCL', 'G5SP', 'TMUT', 'H8QI', 'A2U7', 'CXJC', 'W7M9', 'WHUE', 'W60D', 'CT26', 'FXZW', '6PFH', 'SAO4', '78G3', 'F3DB', 'K7QH', 'EQUQ', 'KXWZ', 'UVW1', 'LBID', 'M7IT', 'FYXV', '2A7N', 'IX4W', 'OYN8', 'WJ8R', 'F4S1', 'GAF2', 'IXVY', 'WTTZ', '30MM', 'YQIN', 'P6WM', 'Q4D5', '857P', 'GMRZ', 'JNXG', 'GQFK', 'R16P', 'SPCI', 'V84L', 'DIRM', 'NYB4', 'K234', 'P0K5', 'R0QI', '2W8V', 'MKDH', 'TI36', '0USO', 'S3SD', '6VIV', 'W31N', '3R55', 'OE0A', 'YERS', 'XUZY', 'PRMH', 'VFV1', 'BDW7', 'GYVK', 'P1QD', 'FQNE', '5F63', 'A51Z', 'XOHS', '4CUF', 'QQN7', 'PIRE', 'JHSZ', '8GDE', 'WJH6', 'OJ5M', '8MED', 'Z8TP', 'ZGXO', 'ZO3J', '5WIE', 'DVS9', 'FAF4', 'ULQ2', '84G7', 'D9XC', 'PU1O', 'I58O', '2Q3F', 'MVO1', '6450', 'PV3X', '0J5D', 'S2QI', 'XS6G', 'XE4Z', '57FR', '33S9', '8Y9X', 'UDVU', 'W08O', '3Y60', 'QDGO', 'SLOY', 'T3PW', '7I6G', 'HGDB', 'T95P', '9DED', 'CLD3', 'ZTRS', 'EGQ8', 'KG4S', 'ZB8G', 'RLSK', 'VXA4', 'BPHN', 'BVQA', 'PI34', 'YTCI', 'AGBA', 'RJQJ', '5I30', 'GE4R', '3MFE', 'I5P7', 'OSBM', 'MN5X', '4G7V', 'ZYE4', 'GI4X', 'X9O0', 'W4FE', '95LX', 'XXKK', 'KQHO', '6PK6', 'NZB3', 'HG1E', 'QQFM', 'UV14', '0N2Y', 'KMI4', 'D0TJ', 'PDQD', 'C2HU', 'II98', '8PV2', 'KX6L', 'K9J5', 'V2A8', '33ST', 'HJ6T', 'LNO4', '5YDE', 'N8H8', '6OTR', 'XDWT', 'G61J', 'AUCR', 'EJL0', '7A4D', '8HRW', 'Q84W', 'WYNT', 'CJMS', 'QOB1', 'JOSX', '8EXF', 'O2SX', 'JJT9', 'SY5O', 'XTI9', 'D523', 'UD5D', '2YBB', 'C9Q1', 'BJYV', '2S4V', 'QAKO', '32XH', '8ZL2', 'DQGG', 'OSR1', '1I3D', '1194', 'UDZK', 'OJ9S', 'M79V', '7VXK', 'LE1A', '6TB8', 'CFLD', 'GUIB', '8IWX', '25QO', 'C0JJ', 'VH4G', 'V6R2', 'Z3AC', 'IWQZ', 'R8A0', 'Q6YS', 'BOHN', 'P17K', 'JB1F', 'HSHH', 'VSTE', 'OJDG', 'SNGJ'];
+            foreach($codes as $code) {
+                (new Codes())->create(['content' => $code]);
+            }
+        }
+    ],
+
+    'down' => [
+        'table' => 'codes',
+        'drop' => true,
+        'index' => [
+            'content'
+        ],
+    ]
+];

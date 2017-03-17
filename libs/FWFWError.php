@@ -6,7 +6,7 @@
  * Time: 15:17
  */
 
-class Error {
+class FWError {
     public static function raise($code = 404)
     {
         URL::setHeaders($code);

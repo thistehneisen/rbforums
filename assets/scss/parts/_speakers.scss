@@ -1,0 +1,112 @@
+section.speakers {
+    width: 100%;
+    background: rgb(0,44,157); /* Old browsers */
+    background: linear-gradient(38deg,  rgba(0,44,157,1) 0%,rgba(31,108,195,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002c9d', endColorstr='#1f6cc3',GradientType=1 );
+    margin: 0 auto;
+
+    header {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1154px;
+        padding: 60px 0 0;
+        text-align: left;
+        h2 {
+            font-size: 35px;
+            color: #FFFFFF;
+            font-weight: bold;
+            margin: 0;
+            text-transform: uppercase;
+            text-align: left;
+            width: 100%;
+        }
+    }
+
+    .content {
+        width: 100%;
+        max-width: 1154px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        .speaker {
+            text-decoration: none;
+            width: 262px;
+            height: 363px;
+            display: block;
+            background: #FFFFFF 0 0 no-repeat;
+            margin-right: 35px;
+            margin-bottom: 30px;
+            float: left;
+            padding: 250px 20px 0;
+            box-sizing: border-box;
+            span {
+                display: block;
+                &.name {
+                    font-size: 19px;
+                    line-height: 22px;
+                    font-weight: bold;
+                    padding-bottom: 5px;
+                }
+                &.position {
+                    font-size: 15px;
+                    line-height: 18px;
+                    font-weight: bold;
+                    color: #b4b4b4;
+                }
+            }
+
+            &.s7, &.s11, &.s15, &.s20, &.s24 {
+                margin-right: 0;
+            }
+        }
+
+        .a-description {
+            display: none;
+        }
+
+        .col1, .col2 {
+            float: left;
+            width: 262px;
+            margin-right: 0;
+        }
+
+        .col1 {
+            margin-right: 35px;
+        }
+
+        .main-description {
+            float: left;
+            width: 560px;
+            height: 755px;
+            margin-right: 35px;
+            background: #FFFFFF;
+            box-sizing: border-box;
+            padding: 20px;
+
+            h2 {
+                margin: 0;
+                padding: 20px 0 0;
+                font-size: 19px;
+                line-height: 23px;
+                color: #5d5d5d;
+            }
+
+            h3 {
+                margin: 0;
+                font-size: 15px;
+                line-height: 18px;
+                font-weight: bold;
+                color: #b4b4b4;
+            }
+
+            .about {
+                margin-top: 40px;
+                width: 100%;
+                font-size: 16px;
+                color: #5d5d5d;
+                overflow: auto;
+                height: 380px;
+                line-height: 19px;
+            }
+        }
+    }
+}

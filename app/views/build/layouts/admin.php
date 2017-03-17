@@ -4,7 +4,7 @@
     <title><?=Config::get('app.title', '');?></title>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<link rel="stylesheet" href="/assets/css/admin-fc598f6c34.min.css">
+	<link rel="stylesheet" href="/forum/assets/css/admin-fc598f6c34.min.css">
     <meta content="<?=Config::get('app.description', '')?>" name="description" />
     <meta property="og:title" content="<?=Config::get('app.title', '')?>" />
     <meta property="og:type" content="website" />
@@ -21,7 +21,7 @@
 <div class="wrapper">
     <?= Menu::top(); ?>
     <?= $content; ?>
-	<script src="/assets/js/admin-f963f340cd.min.js"></script>
+	<script src="/forum/assets/js/admin-abb10876ac.min.js"></script>
     <?= Asset::GA(null); ?>
 </body>
 </html>

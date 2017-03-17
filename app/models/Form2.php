@@ -6,6 +6,6 @@
  * Date: 04/11/2016
  * Time: 14:56
  */
-class Answers extends Models {
-	protected $table = 'answers';
+class Form2 extends Models {
+	protected $table = 'form2';
 }
