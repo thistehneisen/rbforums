@@ -4,7 +4,7 @@
             <li><a data-id="home" class="home active" href="<?= URL::to('/');?>">Home</a></li>
             <li><a data-id="programme" class="programme" href="<?= URL::to('programme');?>">Programme</a></li>
             <li><a data-id="speakers" class="speakers" href="<?= URL::to('speakers');?>">Speakers</a></li>
-            <li><a data-id="suppliers" class="suppliers" href="<?= URL::to('suppliers');?>">Suppliers</a></li>
+            <li><a data-id="suppliers" class="suppliers" href="<?= URL::to('suppliers');?>">Suppliers' networking</a></li>
             <li><a data-id="location" class="location" href="<?= URL::to('location');?>">Location</a></li>
             <li><a data-id="registration" class="registration" href="<?= URL::to('registration');?>">Registration</a></li>
             <li><a data-id="media-accreditation" class="for-media" href="<?= URL::to('for-media');?>">For media</a></li>

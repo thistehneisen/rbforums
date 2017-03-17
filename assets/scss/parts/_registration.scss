@@ -34,7 +34,7 @@ section.registration {
                 vertical-align: middle;
                 height: 118px;
                 box-sizing: border-box;
-                padding: 20px 0;
+                padding: 20px 0 0;
                 line-height: 27px;
 
                 &.active {
@@ -44,7 +44,7 @@ section.registration {
                 span {
                     display: block;
 
-                    max-width: 340px;
+                    max-width: 300px;
                     float: right;
                     margin-right: 120px;
                     text-transform: uppercase;

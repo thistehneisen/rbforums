@@ -107,10 +107,10 @@ Agnis Driksna has MBA degree in Business and law in European Union from Rigas St
     ],
 
     [
-        'name' => 'Kaido Zimmerman',
+        'name' => 'Kaido Zimmermann',
         'position' => 'JV RB Rail AS, Planning and Implementation Manager',
-        'about' => 'Kaido Zimmerman is responsible for RB Rail’s planning and implementation activities of the Rail Baltica Global Project. Previously he has gained experience in railway and legal consultation services, leading the consultancy company Zimmermann IB. Kaido Zimmerman has also served as Railway Logistics Director in Port of Sillamäe in Estonia, was Chief Engineer of Latvian Railways and Chairman of the Board-Managing Director of Estonian Railways. He was also Lecturer of Railway Construction in Tallinn University of Technology.
-Kaido Zimmerman holds a Master’s Degree in Engineering from Tallinn University of Technology.',
+        'about' => 'Kaido Zimmermann is responsible for RB Rail’s planning and implementation activities of the Rail Baltica Global Project. Previously he has gained experience in railway and legal consultation services, leading the consultancy company Zimmermann IB. Kaido Zimmermann has also served as Railway Logistics Director in Port of Sillamäe in Estonia, was Chief Engineer of Latvian Railways and Chairman of the Board-Managing Director of Estonian Railways. He was also Lecturer of Railway Construction in Tallinn University of Technology.
+Kaido Zimmermann holds a Master’s Degree in Engineering from Tallinn University of Technology.',
         'picture' => 'RB_speakers_color_Kaido-Zimmermann.png',
     ],
 

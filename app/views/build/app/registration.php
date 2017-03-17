@@ -15,12 +15,11 @@
     <div class="content">
         <div class="buttons">
             <a href="#" class="active" data-form="day1">
-                <span>Rail Baltica: Building a<br>
-                    new economic corridor<br>
-                <strong>using your unique code</strong></span>
+                <span>Register for Day 1<br>
+                <strong>Please, use your unique registration code</strong></span>
             </a>
             <a href="#" data-form="day2">
-                <span>Industry suppliers day</span>
+                <span>Register for Day 2</span>
             </a>
             <div class="clearfix"></div>
         </div>
@@ -30,7 +29,7 @@
                 <h2>Registration closing date April 9, 2017</h2>
                 <div class="intro">This is a registration form for Rail Baltica Global Forum 2017. Registration is open till April 9, 2017.
                     To register for Day 1, please use the unique registration code you have received together with the invitation to the event.<br>
-                    To register for Day 2, click to open and fill out the event registration form and wait for the confirmation email. Your registration is approved only when you receive confirmation
+                    To register for Day 2, click to open and fill out the event registration form and wait for the confirmation e-mail. Your registration is approved only when you receive confirmation
                     e-mail from the organizer.
                 </div>
 
@@ -76,14 +75,14 @@
                         <label for="need_visa_invite">
                            I need invitation for Visa
                         </label>
-                        <?= Form::checkbox( 'potential_supplier', '1', ( old( 'potential_supplier', 0 ) == 1 ) ); ?>
-                        <label for="potential_supplier">
-                            I am interested in this event as potential supplier
-                        </label>
-                        <?= Form::checkbox( 'agree_to_supp_catalogue', '1', ( old( 'agree_to_supp_catalogue', 0 ) == 1 ) ); ?>
-                        <label for="agree_to_supp_catalogue">
-                            I agree, that my data will be used to make the Suppliers’ Catalog. (It would be available publicly.)
-                        </label>
+<!--                        --><?//= Form::checkbox( 'potential_supplier', '1', ( old( 'potential_supplier', 0 ) == 1 ) ); ?>
+<!--                        <label for="potential_supplier">-->
+<!--                            I am interested in this event as potential supplier-->
+<!--                        </label>-->
+<!--                        --><?//= Form::checkbox( 'agree_to_supp_catalogue', '1', ( old( 'agree_to_supp_catalogue', 0 ) == 1 ) ); ?>
+<!--                        <label for="agree_to_supp_catalogue">-->
+<!--                            I agree, that my data will be used to make the Suppliers’ Catalog. (It would be available publicly.)-->
+<!--                        </label>-->
                     </div>
                     <div class="col disabled">
                         <?= Form::label( 'company', 'Company / Organization *' ); ?>
@@ -120,7 +119,7 @@
             <div class="form off" id="form2">
                 <h2>Registration closing date 9.04.2017</h2>
                 <div class="intro">
-                    <p>Please take into account that your registration is approved only when you receive a confirmation email from the organizer.</p>
+                    <p>Please take into account that your registration is approved only when you receive a confirmation e-mail from the organizer.</p>
                     <p>There is a big interest of suppliers to participate in this day. Don't hesitate to register as soon as possible. In order to serve the interest of all, we will confirm registration for a maximum of three persons from one company. All other participation will be under the consideration depending on the available space.</p>
                     <p>A couple of days before the event, the potential suppliers registering for DAY 2 “Industry Supplier’s Day” have a possibility to receive the List of contacts of all suppliers attending the event for better networking possibilities. To receive the List you have to share your contacts as well.</p>
 
@@ -128,7 +127,7 @@
                     <ul>
                         <li>attend special Suppliers' Meeting point for future partnerships and contact building;</li>
                         <li>participate in the Suppliers' Meeting point with your info stand following the principle of first-come, first-served as there is a limited number of spaces available. If you are interested in placing your info stand, please indicate it in the registration form by first reading the instruction;</li>
-                        <li>special on-the-spot visit to the site – Riga Central Railway Station. Detailed information about the technicalities of the visit will be sent to interested suppliers directly by email.</li>
+                        <li>special on-the-spot visit to the site – Riga Central Railway Station. Detailed information about the technicalities of the visit will be sent to interested suppliers directly by e-mail.</li>
                     </ul>
 
                 </div>
@@ -170,7 +169,7 @@
                         </label>
                         <?= Form::checkbox( 'full_suppliers_list', '1', ( old( 'full_suppliers_list', 0 ) == 1 ), ['id'=> 'form2-full_suppliers_list'] ); ?>
                         <label for="form2-full_suppliers_list">
-                            I want to receive the full list of suppliers and their contacts participating in DAY 2 “Industry Supplier’s Day”, as well as to include my contact information in the List. (The List will be shared only with those who had given permission to include their contacts in it.”)
+                            I want to receive the full list of suppliers and their contacts participating in DAY 2 “Industry Supplier’s Day”, as well as to include my contact information in the List. (The List will be shared only with those who had given permission to include their contacts in it.)
                         </label>
                         <?= Form::checkbox( 'cs_visit', '1', ( old( 'cs_visit', 0 ) == 1 ) , ['id'=> 'form2-cs_visit']); ?>
                         <label for="form2-cs_visit">

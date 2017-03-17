@@ -50,6 +50,33 @@
 	
 	$(function () {
 	
+	    setTimeout(function () {
+	        var pathArray = window.location.pathname.split('/');
+	        if (pathArray.length > 2) {
+	            clicks_scrollTo(pathArray[2], $('#' + pathArray[2]), window.location.href);
+	        }
+	
+	        var menuIds = [];
+	        $('.main-navigation a').each(function () {
+	            menuIds.push([$(this).data('id'), $('#' + $(this).data('id')).position().top, $(this)]);
+	        });
+	
+	        $(window).scroll(function () {
+	            var posTop = $('body').scrollTop() + 80;
+	            var active = menuIds[0];
+	            for (var i = 0; i < menuIds.length; i++) {
+	                if (posTop > menuIds[i][1]) {
+	                    active = menuIds[i];
+	                }
+	            }
+	
+	            if (!active[2].hasClass('active')) {
+	                $('.main-navigation a').removeClass('active');
+	                active[2].addClass('active');
+	            }
+	        });
+	    }, 250);
+	
 	    $(document).on('click', '.main-navigation a', function (event) {
 	        event.preventDefault();
 	        var el = $(this);
