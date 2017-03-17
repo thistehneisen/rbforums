@@ -5,7 +5,7 @@ class AppController extends BaseController {
 
     public function __construct() {
         parent::__construct();
-        View::share( 'shareImg', URL::to( '/assets/img/rb-share.png' ) );
+        View::share( 'shareImg', URL::to( '/assets/img/rb-share2.png' ) );
         View::share( 'shareTitle', Config::get( 'app.title', '' ) );
         View::share( 'shareDesc', Config::get( 'app.description', '' ) );
     }
