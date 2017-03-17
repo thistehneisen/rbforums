@@ -60,7 +60,8 @@ gulp.task('useref', function () {
             }
         }))
         .pipe(gulpIf('*.js', uglify({
-            warnings: true
+            warnings: true,
+            mangle: false
         })))
         .pipe(gulpIf('*.js', rev()))
         .pipe(gulpIf('*.css', cssnano({
