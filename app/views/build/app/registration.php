@@ -117,7 +117,7 @@
             </div> <!-- form1 -->
 
             <div class="form off" id="form2">
-                <h2>Registration closing date 9.04.2017</h2>
+                <h2>Registration closing date April 9, 2017</h2>
                 <div class="intro">
                     <p>Please take into account that your registration is approved only when you receive a confirmation e-mail from the organizer.</p>
                     <p>There is a big interest of suppliers to participate in this day. Don't hesitate to register as soon as possible. In order to serve the interest of all, we will confirm registration for a maximum of three persons from one company. All other participation will be under the consideration depending on the available space.</p>

@@ -1,4 +1,4 @@
-<section class="location" id="location">
+<section class="location" id="venue">
     <div class="forms">
         <div class="form">
             <div class="col-wrap">

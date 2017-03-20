@@ -6,7 +6,7 @@ $(function () {
 
     setTimeout(function () {
         let pathArray = window.location.pathname.split( '/' );
-        if(pathArray.length > 2) {
+        if(pathArray.length > 2 && pathArray[2] != '') {
             clicks_scrollTo(pathArray[2], $('#' + pathArray[2]), window.location.href);
         }
 
