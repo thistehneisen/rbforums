@@ -32,6 +32,7 @@
 <?= $content; ?>
 
 <!--build:js /assets/js/app.min.js-->
+<script type="text/javascript" src="/forum/assets/dev/js/edge.6.0.0.min.js"></script>
 <script type="text/javascript" src="/forum/assets/js/app.js"></script>
 <!--endbuild-->
 

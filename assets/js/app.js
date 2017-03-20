@@ -318,6 +318,15 @@
 	        main.find('.about').html(about);
 	        clicks_scrollTo('speakers', $('#speakers'));
 	    });
+	
+	    AdobeEdge.loadComposition('/forum/assets/js/Railbaltic_logo', 'EDGE-267760406', {
+	        scaleToFit: "none",
+	        centerStage: "none",
+	        minW: "0px",
+	        maxW: "undefined",
+	        width: "680px",
+	        height: "280px"
+	    }, { "dom": {} }, { "dom": {} });
 	});
 	
 	function validFormData(form) {

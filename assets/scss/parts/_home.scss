@@ -1,9 +1,65 @@
 section {
     &.home {
         width: 100%;
-        background: #FFFFFF url("../img/home-page-new3.jpg") 50% 0 no-repeat;
+        background: #FFFFFF url("../img/home-page-new4.jpg") 50% 0 no-repeat;
         height: 1309px;
         position: relative;
+
+        .edgeLoad-EDGE-267760406 { visibility:hidden; }
+
+        .logo-container {
+            position: relative;
+            width: 100%;
+            max-width: 1154px;
+            margin: 0 auto;
+            .moving-logo {
+                position: absolute;
+                top: 220px;
+            }
+            .slogan {
+                position: absolute;
+                top: 260px;
+                left: 680px;
+                box-sizing: border-box;
+                font-size: 45px;
+                line-height: 54px;
+                color: #002c9e;
+                font-weight: bold;
+                border-left: 1px #39a1e4 solid;
+                padding: 40px 0 0 45px;
+            }
+        }
+
+        .main-text {
+            font-size: 22px;
+            font-weight: bold;
+            color: #5d5d5d;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 1154px;
+            padding: 510px 20px 0;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 23px;
+            color: #5d5d5d;
+            text-align: right;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1154px;
+            box-sizing: border-box;
+            padding: 200px 575px 0 40px;
+
+            .hl {
+                color: #3396d9;
+            }
+
+        }
 
         .nav-buttons {
             text-align: right;
