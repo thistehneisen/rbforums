@@ -87,7 +87,7 @@ Dins Merirands has an academic master’s degree in legal science, as well as an
     [
         'name' => 'Jorma Härkönen',
         'position' => 'Director of LIMOWA Logistics Centre Cluster, Finland',
-        'about' => 'Jorma Härkönen, M.Sc (econ), has a long business experience of logistics and international trade both in logistics and paper industry, both in Finland and the UK. For about 10 years Härkönen has been leading LIMOWA Association which is Finnish neutral, nationwide logistics development cluster. LIMOWA is focused especially in logistics nodal points, intermodal connections and transport corridors. LIMOWA is also very much involved with the technological development of intralogistics sector. Härkönen is a member of Finland’s Cent ral Chamber of Commerce Transport committee. He was also awarded a Logistician of the Year prize this year by Finland’s Logistics Association.',
+        'about' => 'Jorma Härkönen, M.Sc (econ), has a long business experience of logistics and international trade both in logistics and paper industry, both in Finland and the UK. For about 10 years Härkönen has been leading LIMOWA Association which is Finnish neutral, nationwide logistics development cluster. LIMOWA is focused especially in logistics nodal points, intermodal connections and transport corridors. LIMOWA is also very much involved with the technological development of intralogistics sector. Härkönen is a member of Finland’s Central Chamber of Commerce Transport committee. He was also awarded a Logistician of the Year prize this year by Finland’s Logistics Association.',
         'picture' => 'RB_speakers_color_Jorma-Harkonen.png',
     ],
     [
