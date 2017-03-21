@@ -16,7 +16,7 @@ class AppController extends BaseController {
 
         $data['page'] .= View::make( 'app.programme' );
 
-        $data['page'] .= View::make( 'app.speakers', ['speakers' => Config::get('speakers', [])]);
+        $data['page'] .= View::make( 'app.speakers', [ 'speakers' => Config::get( 'speakers', [] ) ] );
         $data['page'] .= View::make( 'app.suppliers' );
         $data['page'] .= View::make( 'app.location' );
 
@@ -81,6 +81,7 @@ class AppController extends BaseController {
                     'ip'       => Request::ip(),
                     'agent'    => Request::agent(),
                     'pubstamp' => time(),
+                    'code_id'  => $code->id,
                 ] ) );
 
                 $response['success'] = 'ok';
@@ -193,7 +194,7 @@ class AppController extends BaseController {
             $message = Swift_Message::newInstance();
             $message
                 ->setSubject( "Contact form from RailBaltica Forum landing page" )
-                ->setFrom( [ Input::get( 'email' ) => Input::get( 'first_name' ) . ' ' . Input::get('last_name') ] )
+                ->setFrom( [ Input::get( 'email' ) => Input::get( 'first_name' ) . ' ' . Input::get( 'last_name' ) ] )
                 ->setTo( [ Config::get( 'app.email' ) ] )
                 ->setBody( $messageText, "text/html" );
 
