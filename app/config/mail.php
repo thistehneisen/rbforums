@@ -1,3 +1,3 @@
 <?php return [
-    'protocol' => 'mail',
+    'transport' => 'sendmail',
 ];

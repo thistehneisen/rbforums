@@ -1,4 +1,8 @@
-<nav class="clearfix white bg-black">
+<?php
+/**
+ * @var $menu array
+ */
+?><nav class="clearfix white bg-black">
     <div class="sm-col">
         <a href="<?= URL::to('admin'); ?>" class="button py2 button-transparent"><?= trans('admin.home'); ?></a>
         <?php foreach($menu as $perm => $name) :?>

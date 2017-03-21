@@ -91,12 +91,23 @@ Dins Merirands has an academic master’s degree in legal science, as well as an
         'picture' => 'RB_speakers_color_Jorma-Harkonen.png',
     ],
     [
+        'name' => 'Raimonds Aronietis',
+        'position' => 'Policy Analyst - Freight, International Transport Forum at the OECD',
+        'about' => 'Dr. Raimonds Aronietis is a Policy Analyst at the International Transport Forum at the OECD, where he contributes to transport research and policy analysis work. Previously he has worked as a senior researcher in the Department of Transport and Regional Economics at the University of Antwerp. In 2013 he defended his PhD on the topic of "Successful Development and Implementation of Transport Policy Innovations". His work experience includes Transport market analyst work in Road Transport Administration of Latvia. He graduated from Riga Technical University masters programme in logistics entrepreneurship and transport economy in 2004.',
+        'picture' => 'RB_speakers_Raimonds_Aronietis.png',
+    ],
+    [
         'name' => 'Nauris Kļava',
         'position' => 'Director of the Management Consultations Department, Ernst & Young Baltic Ltd',
         'about' => 'Nauris Kļava joined EY Latvia in 2002 and since 2016 he is a Partner in EY Latvia Advisory Services department with a wide range of experience in banking and financial services, utilities and transportation. His main areas of specialization are feasibility evaluation; cost benefit analysis; development of strategic (policy) documents; preparation of feasibility studies; risk management consultations and business process analysis. Nauris Kļava has a Master’s degree in Public Administration from University of Latvia and Bachelor’s degree in Business Administration and Economics from Stockholm School of Economics in Riga. He is also a Member of Association of Chartered Certified Accountants (ACCA) and a Prince2 registered Project Management Practitioner.',
         'picture' => 'RB_speakers_color_Nauris_Klava.png',
     ],
-
+    [
+        'name' => 'Oskars Redbergs',
+        'position' => 'Architect, educator and curator, PhD cand. of Brandenburgische Technische Universität, Germany',
+        'about' => 'Oskars Redbergs\' main research focus is on the transformation of urban landscape in Northern European cities. He is guest lecturer at Aalto University and Tallinn University of Technology, Member of the board of the Latvian Architectural Association and a co-founder of the Hilbig Institute Riga. Head of the Rail Baltica Urban Impacts project.',
+        'picture' => 'RB_speakers_color_Oskars-Redbergs.png',
+    ],
     [
         'name' => 'Agnis Driksna',
         'position' => 'Director of Development and Cooperation Department, Eiropas dzelzceļa līnijas',

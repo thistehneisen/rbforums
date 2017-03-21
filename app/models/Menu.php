@@ -6,9 +6,10 @@ class Menu {
         $data['menu'] = [];
         if(Auth::check()) {
             $data['menu'] = [
-//                'votes' => 'admin.votes',
-	            'bans' => 'admin.bans',
-	            'bans2' => 'admin.bans_150',
+                'day-1' => 'admin.day-1',
+                'day-2' => 'admin.day-2',
+                'media' => 'admin.media',
+                'contacts' => 'admin.contacts'
 //	            'export' => 'admin.export',
             ];
         }
