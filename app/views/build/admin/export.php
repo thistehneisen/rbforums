@@ -3,15 +3,15 @@
     <div class="flex flex-wrap">
         <div class="p1">
 	        <form action="" method="post">
-		        <label>Atdalītājsimbols: </label><input type="text" name="delimiter" value="," style="width: 30px;"><br>
-		        <label for="card">Kartiņa: </label>
-		        <select name="card" id="card">
-			        <option value="1">1</option>
-			        <option value="2">2</option>
-			        <option value="3">3</option>
-			        <option value="4">4</option>
+		        <label for="delimiter" class="inline-block mb2">Atdalītājsimbols: </label>
+                <input type="text" name="delimiter" id="delimiter" value="," class="field col-1 mb2"><br>
+		        <label for="type">Forma: </label>
+		        <select name="type" id="type" class="field">
+			        <option value="day1">Day 1</option>
+			        <option value="day2">Day 2</option>
+			        <option value="media">Media</option>
 		        </select><br><br>
-		        <button type="submit" class="button">Eksportēt</button>
+		        <button type="submit" class="block btn btn-primary bg-navy col-12">Eksportēt</button>
 	        </form>
         </div>
     </div>

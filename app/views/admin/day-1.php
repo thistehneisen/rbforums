@@ -5,6 +5,7 @@
  * @var $curPage integer
  * @var $link string
  * @var $tab string
+ * @var $codes array
  */
 ?>
 <section class="container px2 py3">
@@ -28,6 +29,7 @@
                         <th> </th>
                         <th> </th>
                     <?php endif;?>
+                    <th>Kods</th>
                     <th>Vārds, Uzvārds</th>
                     <th>Uzruna</th>
                     <th>Ranks</th>
@@ -47,6 +49,7 @@
                             <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-green btn-small white m0 ok-day-1">jā</a></td>
                             <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-red btn-small white m0 ney-day-1">nē</a></td>
                         <?php endif; ?>
+                        <td><?=$codes[$item->code_id];?></td>
                         <td><?=$item->first_name;?> <?=$item->last_name;?></td>
                         <td><?=$item->salutation;?></td>
                         <td><?=$item->title;?></td>

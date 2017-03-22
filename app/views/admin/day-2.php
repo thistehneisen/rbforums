@@ -36,6 +36,7 @@
                     <th>Vajag vīzu</th>
                     <th>Vajag info</th>
                     <th>Drīkst sarakstā</th>
+                    <th>CS Apmeklējums</th>
                     <th>Uzņēmums</th>
                     <th>Industrija</th>
                     <th>Amats</th>
@@ -57,6 +58,7 @@
                         <td><?=($item->need_visa_invite == 1 ? 'Jā' : 'Nē');?></td>
                         <td><?=($item->info_stand == 1 ? 'Jā' : 'Nē');?></td>
                         <td><?=($item->full_suppliers_list == 1 ? 'Jā' : 'Nē');?></td>
+                        <td><?=($item->cs_visit == 1 ? 'Jā' : 'Nē');?></td>
                         <td><?=$item->company;?></td>
                         <td><?=$item->industry;?></td>
                         <td><?=$item->position;?></td>
