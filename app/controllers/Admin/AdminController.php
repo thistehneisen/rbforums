@@ -229,16 +229,19 @@ class AdminController extends BaseController {
                     $response['success'] = 'ok';
                     $response['mail']    = 'ok';
 
-                    $mail    = new Mail();
-                    $subject = ( $status == 1 ? "Your Registration Confirmed | Rail Baltica Global Forum | Day 1" : "Registration refusal for Rail Baltica Global Forum I Watch live | Day 1" );
-                    $mail->setSubject( $subject );
-                    $mail->setFrom( "railbaltica@vilands.lv" );
-                    $mail->setTo( [ $item->email ] );
-                    $body = ( $status == 1 ? View::make( 'admin.email_approve_day1' ) : View::make( 'admin.email_disapprove_day1' ) );
-                    $mail->setBody( $body, 'text/html' );
-                    if ( ! $mail->send() ) {
-                        $response['mail'] = 'fail';
+                    if($status > -2) {
+                        $mail    = new Mail();
+                        $subject = ( $status == 1 ? "Your Registration Confirmed | Rail Baltica Global Forum | Day 1" : "Registration refusal for Rail Baltica Global Forum I Watch live | Day 1" );
+                        $mail->setSubject( $subject );
+                        $mail->setFrom( "railbaltica@vilands.lv" );
+                        $mail->setTo( [ $item->email ] );
+                        $body = ( $status == 1 ? View::make( 'admin.email_approve_day1' ) : View::make( 'admin.email_disapprove_day1' ) );
+                        $mail->setBody( $body, 'text/html' );
+                        if ( ! $mail->send() ) {
+                            $response['mail'] = 'fail';
+                        }
                     }
+
                 }
                 break;
             case 'day2' :
@@ -250,15 +253,17 @@ class AdminController extends BaseController {
                     $response['success'] = 'ok';
                     $response['mail']    = 'ok';
 
-                    $mail    = new Mail();
-                    $subject = ( $status == 1 ? "Your Registration Confirmed | Rail Baltica Global Forum | Day 2" : "Registration refusal for Rail Baltica Global Forum I Watch live | Day 2" );
-                    $mail->setSubject( $subject );
-                    $mail->setFrom( "railbaltica@vilands.lv" );
-                    $mail->setTo( [ $item->email ] );
-                    $body = ( $status == 1 ? View::make( 'admin.email_approve_day1' ) : View::make( 'admin.email_disapprove_day1' ) );
-                    $mail->setBody( $body, 'text/html' );
-                    if ( ! $mail->send() ) {
-                        $response['mail'] = 'fail';
+                    if($status > -2) {
+                        $mail    = new Mail();
+                        $subject = ( $status == 1 ? "Your Registration Confirmed | Rail Baltica Global Forum | Day 2" : "Registration refusal for Rail Baltica Global Forum I Watch live | Day 2" );
+                        $mail->setSubject( $subject );
+                        $mail->setFrom( "railbaltica@vilands.lv" );
+                        $mail->setTo( [ $item->email ] );
+                        $body = ( $status == 1 ? View::make( 'admin.email_approve_day1' ) : View::make( 'admin.email_disapprove_day1' ) );
+                        $mail->setBody( $body, 'text/html' );
+                        if ( ! $mail->send() ) {
+                            $response['mail'] = 'fail';
+                        }
                     }
                 }
                 break;

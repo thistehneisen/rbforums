@@ -49,6 +49,7 @@
                         <?php if($tab == 'new') :?>
                             <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-green btn-small white m0 ok-day-2">jā</a></td>
                             <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-red btn-small white m0 ney-day-2">nē</a></td>
+                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-fuchsia btn-small lime m0 del-day-2">dzēst</a></td>
                         <?php endif; ?>
                         <td><?=$item->first_name;?> <?=$item->last_name;?></td>
                         <td><?=$item->salutation;?></td>

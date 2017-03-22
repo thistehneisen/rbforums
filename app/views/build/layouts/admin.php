@@ -26,7 +26,7 @@
 <div class="wrapper">
     <?= Menu::top(); ?>
     <?= $content; ?>
-	<script src="/forum/assets/js/admin-6dc69fce90.min.js"></script>
+	<script src="/forum/assets/js/admin-5bbae7c33a.min.js"></script>
     <?= Asset::GA(null); ?>
 </body>
 </html>

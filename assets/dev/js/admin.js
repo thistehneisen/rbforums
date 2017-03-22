@@ -74,6 +74,23 @@ $(function () {
         });
     });
 
+    $(document).on('click', '.del-day-1', function (event) {
+        event.preventDefault();
+        let el = $(this);
+        swal({
+            title: "Tiešām?",
+            text: "Nospiežot OK, pieteikums tiks neatgriezeniski dzēsts bez paziņojuma dalībniekam!",
+            type: "error",
+            showCancelButton: true,
+            // confirmButtonColor: "DD6B55",
+            confirmButtonText: "Esam ļauni!",
+            closeOnConfirm: false,
+            html: false
+        }, function(){
+            $.setStatus('day1', el, -2);
+        });
+    });
+
     $(document).on('click', '.ok-day-2', function (event) {
         event.preventDefault();
         let el = $(this);
@@ -96,7 +113,7 @@ $(function () {
         let el = $(this);
         swal({
             title: "Tiešām?",
-            text: "Nospiežot OK, cilvēkam pienāks automātiski apstiprinājuma epasta vēstule!",
+            text: "Nospiežot OK, pieteikums tiks neatgriezeniski dzēsts bez paziņojuma dalībniekam!",
             type: "error",
             showCancelButton: true,
             // confirmButtonColor: "DD6B55",
@@ -105,6 +122,23 @@ $(function () {
             html: false
         }, function(){
             $.setStatus('day2', el, -1);
+        });
+    });
+
+    $(document).on('click', '.del-day-2', function (event) {
+        event.preventDefault();
+        let el = $(this);
+        swal({
+            title: "Tiešām?",
+            text: "Nospiežot OK, cilvēkam pienāks automātiski apstiprinājuma epasta vēstule!",
+            type: "error",
+            showCancelButton: true,
+            // confirmButtonColor: "DD6B55",
+            confirmButtonText: "Esam ļauni!",
+            closeOnConfirm: false,
+            html: false
+        }, function(){
+            $.setStatus('day2', el, -2);
         });
     });
 

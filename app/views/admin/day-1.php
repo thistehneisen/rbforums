@@ -48,6 +48,7 @@
                         <?php if($tab == 'new') :?>
                             <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-green btn-small white m0 ok-day-1">jā</a></td>
                             <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-red btn-small white m0 ney-day-1">nē</a></td>
+                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-fuchsia btn-small lime m0 del-day-1">dzēst</a></td>
                         <?php endif; ?>
                         <td><?=arrayGet($codes, $item->code_id, 'nezināms');?></td>
                         <td><?=$item->first_name;?> <?=$item->last_name;?></td>
