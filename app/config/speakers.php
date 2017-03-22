@@ -42,9 +42,9 @@ Herald Ruijters holds degrees from Nijmegen and Amsterdam Universities in both F
     ],
     [
         'name' => 'Baiba A. Rubesa',
-        'position' => 'CEO and Chairperson of the Management Board, JV RB Rail',
+        'position' => 'CEO and Chairperson of the Management Board, RB Rail AS',
         'about' => 'Baiba A. Rubesa is an experienced international manager in a range of business areas:  oil and gas, retail, automotive and telecommunications.  She has lived and worked in Canada, Germany, Czechoslovakia, Latvia, Lithuania, Estonia, Azerbaijan, Georgia, Turkmenistan and Norway. 
-Since October 2015 Rubesa is Chairperson of the Management Board and CEO of RB Rail. In January 2017 she was appointed a Supervisory Board member to Latvia’s largest company, Latvenergo. Prior to that she worked as a consultant and new business developer in her own company, RFactor Sia, and served as a Supervisory Board member for Citadeles banka. She has also driven a business agenda as the global Vice President, Corporate Social Responsibility for Statoil ASA, Government and Public Affairs & HSE director for Statoil in the Caspian region, Managing Director for Latvija Statoil SIA and Marketing Director, Statoil Baltic States.
+Since October 2015 Rubesa is Chairperson of the Management Board and CEO of RB Rail AS. In January 2017 she was appointed a Supervisory Board member to Latvia’s largest company, Latvenergo. Prior to that she worked as a consultant and new business developer in her own company, RFactor Sia, and served as a Supervisory Board member for Citadeles banka. She has also driven a business agenda as the global Vice President, Corporate Social Responsibility for Statoil ASA, Government and Public Affairs & HSE director for Statoil in the Caspian region, Managing Director for Latvija Statoil SIA and Marketing Director, Statoil Baltic States.
 Rubesa has served as a Supervisory Board member, DNB NORD banka, Chaired the Foreign Investors Council in Latvia, been a Vice President of the Latvian Chamber of Commerce in Latvia. Currently she serves on the Supervisory Board of the think tank “Providus” and in the foundation Kokneses Fonds to support the development of the Memorial Site “Likteņdārzs”.
 Rubesa was educated in Toronto, Canada at York University and Shaw colleges.
 ',
@@ -52,14 +52,14 @@ Rubesa was educated in Toronto, Canada at York University and Shaw colleges.
     ],
     [
         'name' => 'Indrek Orav',
-        'position' => 'Member of the Board, Rail Baltic Estonia; Member of Supervisory Board, JV RB Rail',
+        'position' => 'Member of the Board, Rail Baltic Estonia; Member of Supervisory Board, RB Rail AS',
         'about' => 'Indrek Orav leads Rail Baltic Estonia, which is one of the implementing bodies for the Rail Baltica project in Estonia. 2004-2009 Indrek Orav worked in Estonian Railways first as one of the directors and later as a Management Board member. Rail Baltic Estonia is a company representing the interests of the Republic of Estonia in the Joint Venture RB Rail AS, set up by the three countries in Riga for management of the whole project. Indrek Orav has obtained a Master\'s degree in Law in Tartu University and degree in Diplomacy and International Relations in the Estonian School of Diplomacy.
 ',
         'picture' => 'RB_speakers_color_Indrek-Orav.png',
     ],
     [
         'name' => 'Dainius Budrys',
-        'position' => 'Director, Rail Baltica statyba; Member of Supervisory Board, JV RB Rail',
+        'position' => 'Director, Rail Baltica statyba; Member of Supervisory Board, RB Rail AS',
         'about' => 'Dainius Budrys has more than 15 years of experience working in public and private sectors. Since 2001 he worked on executive level in different capacities – Head of Commercial operations (JSC “Avec Lit”), Director of Supermarkets (JSC “RIMI Lietuva”), Director and owner (JSC “Audivision”). In 2008 Dainius was elected as a member of the Parliament (Seimas) of the Republic of Lithuania and was also appointed as the Chair of the Committee on Economics.
 His involvement with the Rail Baltica project began in 2014 when he was appointed as the director of “Lithuanian Railways” subsidiary company “Rail Baltica statyba”, the Lithuanian shareholding company of the joint venture “RB Rail AS”.
 Dainius has BA in Economics and MA in Business management (both at the University of Klaipėda).',
@@ -91,6 +91,12 @@ Dins Merirands has an academic master’s degree in legal science, as well as an
         'picture' => 'RB_speakers_color_Jorma-Harkonen.png',
     ],
     [
+        'name' => 'Dominique Deau',
+        'position' => 'Retired railway expert, former Development Director of NExTEO SNCF Réseau and SNCF Mobilités, France',
+        'about' => 'Dominique Deau is a railwayman, having mainly a background in railway operation and economic assessment. From 2010 to January 2017 he has been in charge of NExTEO project whose main objective is to improve line capacity and journey times in Paris suburban area. Previously he has been head of Atlantic TGV business unit, then head of SNCF investment department. From 1994 to 1999 Dominique Deau joined the CTRL project in London (Channel Tunnel Rail Link), dealing mainly with performances - journey time, capacity, station track layout. He was also given the responsibility for the economic assessment of several HSL (Paris – Lille, Paris – Brussels – Cologne / Amsterdam, London – Paris / Brussels) ; as well he performed abroad two 6 week assignments in South Korea and Taïwan. He started his career joining SNCF in 1978 in the South of France, then was station master in St Germain des Fossés, worked at Modane and in Paris South-East control centre. He has also worked in SNCF Research Department where he produced a computer program (RIHO) giving the fastest train timetable available from any station to any station in France in less than 5 seconds.',
+        'picture' => 'RB_speakers_color_Dominique_Deau.png'
+    ],
+    [
         'name' => 'Raimonds Aronietis',
         'position' => 'Policy Analyst - Freight, International Transport Forum at the OECD',
         'about' => 'Dr. Raimonds Aronietis is a Policy Analyst at the International Transport Forum at the OECD, where he contributes to transport research and policy analysis work. Previously he has worked as a senior researcher in the Department of Transport and Regional Economics at the University of Antwerp. In 2013 he defended his PhD on the topic of "Successful Development and Implementation of Transport Policy Innovations". His work experience includes Transport market analyst work in Road Transport Administration of Latvia. He graduated from Riga Technical University masters programme in logistics entrepreneurship and transport economy in 2004.',
@@ -109,6 +115,17 @@ Dins Merirands has an academic master’s degree in legal science, as well as an
         'picture' => 'RB_speakers_color_Oskars-Redbergs.png',
     ],
     [
+        'name' => 'Emils Rode',
+        'position' => 'Senior expert, Live Baltic Campus project',
+        'about' => 'Emils Rode is a specialist in strategy, design, and innovation who has consulted businesses, government agencies and ministries, municipalities and universities.
+
+Emils Rode received MBA degree from Goizueta Business School at Emory University in Atlanta, USA as a Fulbright Scholar. His work experience includes a period as a consultant with the Boston Consulting Group.
+In recent years he has been working on a series of projects financed by the EU Interreg programme, aimed at cooperation and joint planning among Baltic Sea nations, such as LogOn Baltic, Basaar, Expat, Live Baltic, Culturability BSR, EmpInno, etc.
+Emils Rode is a senior expert at Live Baltic Campus project, of which he was one of the initiators. This project, running from 2015 to 2017, is about jointly developing best practice in planning university campuses as hubs of knowledge in Sweden, Finland, Estonia, and Latvia.
+',
+        'picture' => 'RB_speakers_color_emils_rode.png',
+    ],
+    [
         'name' => 'Agnis Driksna',
         'position' => 'Director of Development and Cooperation Department, Eiropas dzelzceļa līnijas',
         'about' => 'Since 2016 Agnis Driksna is working at “European Railway Lines” in position of Director of Development and cooperation department. Since 2014, he had been the Rail Baltic Project Manager of the Ministry of Transport responsible for international cooperation. He prepared the first funding applications to the EU and represented Latvia in the joint projects of the Baltic States and the EU.
@@ -119,7 +136,7 @@ Agnis Driksna has MBA degree in Business and law in European Union from Rigas St
 
     [
         'name' => 'Kaido Zimmermann',
-        'position' => 'Planning and Implementation Manager, JV RB Rail',
+        'position' => 'Planning and Implementation Manager, RB Rail AS',
         'about' => 'Kaido Zimmermann is responsible for RB Rail’s planning and implementation activities of the Rail Baltica Global Project. Previously he has gained experience in railway and legal consultation services, leading the consultancy company Zimmermann IB. Kaido Zimmermann has also served as Railway Logistics Director in Port of Sillamäe in Estonia, was Chief Engineer of Latvian Railways and Chairman of the Board-Managing Director of Estonian Railways. He was also Lecturer of Railway Construction in Tallinn University of Technology.
 Kaido Zimmermann holds a Master’s Degree in Engineering from Tallinn University of Technology.',
         'picture' => 'RB_speakers_color_Kaido-Zimmermann.png',
@@ -127,7 +144,7 @@ Kaido Zimmermann holds a Master’s Degree in Engineering from Tallinn Universit
 
     [
         'name' => 'Kaspars Briškens',
-        'position' => 'Business Development Manager, JV RB Rail',
+        'position' => 'Business Development Manager, RB Rail AS',
         'about' => 'Kaspars Briškens has been involved with the Rail Baltica project for more than 10 years, initially as a diplomat in the Latvian Foreign Service and later as staff advisor to two Latvian transport ministers, as well as Supervisory Board Member of the Rail Baltica joint venture (RB Rail), since its establishment in October 2014. As of November 2016, Kaspars Briškens is RB Rail’s Business Development Manager responsible for commercialization and business development activities of the Rail Baltica Global Project. Kaspars holds a Master’s Degree in Economics from Stockholm University and a Bachelor’s Degree in Business and Economics from Stockholm School of Economics in Riga (SSE Riga). He is a transport and logistics industry professional with a keen interest in transport economics, intermodal logistics, supply chain development and aviation. He also serves as Deputy Chairman of the Supervisory Board of Air Baltic Corporation. ',
         'picture' => 'RB_speakers_color_Kaspars-Briskens.png',
     ],
