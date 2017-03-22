@@ -175,7 +175,7 @@
 	        var el = $(this);
 	        swal({
 	            title: "Tiešām?",
-	            text: "Nospiežot OK, cilvēkam pienāks automātiski apstiprinājuma epasta vēstule!",
+	            text: "Nospiežot OK, pieteikums tiks neatgriezeniski dzēsts bez paziņojuma dalībniekam!",
 	            type: "error",
 	            showCancelButton: true,
 	            // confirmButtonColor: "DD6B55",

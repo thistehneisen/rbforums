@@ -106,7 +106,7 @@ gulp.task('pi', function () {
 gulp.task('js', function () {
     let app = gulp.src(['assets/dev/js/app.js'])
         .pipe(webpack({
-            watch: true,
+            watch: false,
             output: {
                 filename: 'app.js'
             },
@@ -128,7 +128,7 @@ gulp.task('js', function () {
         .pipe(gulp.dest('assets/js/'));
     let admin = gulp.src(['assets/dev/js/admin.js'])
         .pipe(webpack({
-            watch: true,
+            watch: false,
             output: {
                 filename: 'admin.js'
             },
@@ -154,6 +154,7 @@ gulp.task('js', function () {
 gulp.task('build', function (callback) {
     runSequence('clean:dist',
         'sass',
+        'js',
         'useref',
         callback
     );
