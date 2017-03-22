@@ -27,6 +27,7 @@
                     <?php if($tab == 'new') :?>
                         <th> </th>
                         <th> </th>
+                        <th> </th>
                     <?php endif;?>
                     <th>Vārds, Uzvārds</th>
                     <th>Uzruna</th>
