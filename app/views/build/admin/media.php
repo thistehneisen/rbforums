@@ -1,6 +1,6 @@
 <?php
 /**
- * @var $items Form1
+ * @var $items Form3
  * @var $pages integer
  * @var $curPage integer
  * @var $link string
@@ -29,35 +29,29 @@
                         <th> </th>
                     <?php endif;?>
                     <th>Vārds, Uzvārds</th>
-                    <th>Uzruna</th>
-                    <th>Ranks</th>
                     <th>E-pasts</th>
                     <th>Tel.</th>
-                    <th>Vajag vīzu</th>
-                    <th>Uzņēmums</th>
-                    <th>Industrija</th>
+                    <th>Uz 1. dienu</th>
+                    <th>Uz 2. dienu</th>
                     <th>Amats</th>
-                    <th>Valsts</th>
-                    <th>Pilsēta</th>
+                    <th>Medija nosaukums</th>
+                    <th>Weblapa</th>
                 </tr>
                 </thead>
                 <?php foreach ( $items as $item ) : ?>
                     <tr>
                         <?php if($tab == 'new') :?>
-                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-green btn-small white m0 ok-day-1">jā</a></td>
-                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-red btn-small white m0 ney-day-1">nē</a></td>
+                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-green btn-small white m0 ok-media-2">jā</a></td>
+                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-red btn-small white m0 ney-media-2">nē</a></td>
                         <?php endif; ?>
-                        <td><?=$item->first_name;?> <?=$item->last_name;?></td>
-                        <td><?=$item->salutation;?></td>
-                        <td><?=$item->title;?></td>
+                        <td><?=$item->name_surname;?></td>
                         <td><?=$item->email;?></td>
                         <td><?=$item->phone;?></td>
-                        <td><?=($item->need_visa_invite == 1 ? 'Jā' : 'Nē');?></td>
-                        <td><?=$item->company;?></td>
-                        <td><?=$item->industry;?></td>
+                        <td><?=($item->day_1 == 1 ? 'Jā' : 'Nē');?></td>
+                        <td><?=($item->day_2 == 1 ? 'Jā' : 'Nē');?></td>
                         <td><?=$item->position;?></td>
-                        <td><?=getCountry($item->country);?></td>
-                        <td><?=$item->city;?></td>
+                        <td><?=$item->name_of_media;?></td>
+                        <td><a href="<?=(!stristr($item->website, 'http') ? 'http://' : '') ;?><?=$item->website;?>" target="_blank"><?=$item->website;?></a></td>
                     </tr>
                 <?php endforeach; ?>
             </table>

@@ -34,6 +34,8 @@
                     <th>E-pasts</th>
                     <th>Tel.</th>
                     <th>Vajag vīzu</th>
+                    <th>Vajag info</th>
+                    <th>Drīkst sarakstā</th>
                     <th>Uzņēmums</th>
                     <th>Industrija</th>
                     <th>Amats</th>
@@ -44,8 +46,8 @@
                 <?php foreach ( $items as $item ) : ?>
                     <tr>
                         <?php if($tab == 'new') :?>
-                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-green btn-small white m0 ok-day-1">jā</a></td>
-                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-red btn-small white m0 ney-day-1">nē</a></td>
+                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-green btn-small white m0 ok-day-2">jā</a></td>
+                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-red btn-small white m0 ney-day-2">nē</a></td>
                         <?php endif; ?>
                         <td><?=$item->first_name;?> <?=$item->last_name;?></td>
                         <td><?=$item->salutation;?></td>
@@ -53,6 +55,8 @@
                         <td><?=$item->email;?></td>
                         <td><?=$item->phone;?></td>
                         <td><?=($item->need_visa_invite == 1 ? 'Jā' : 'Nē');?></td>
+                        <td><?=($item->info_stand == 1 ? 'Jā' : 'Nē');?></td>
+                        <td><?=($item->full_suppliers_list == 1 ? 'Jā' : 'Nē');?></td>
                         <td><?=$item->company;?></td>
                         <td><?=$item->industry;?></td>
                         <td><?=$item->position;?></td>

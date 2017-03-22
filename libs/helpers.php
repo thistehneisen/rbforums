@@ -655,9 +655,9 @@ function countryList() {
     );
 }
 
-function getCountry($code) {
+function getCountry($code, $default = 'unknown') {
     $code = strtoupper($code);
-    return arrayGet(countryList(), $code, '');
+    return arrayGet(countryList(), $code, $default);
 }
 
 /**

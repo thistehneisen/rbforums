@@ -20,24 +20,27 @@ body {
     text-align: center;
 }
 
-.stats {
-    width: 100%;
-    background: #fff;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 100px 40px;
-    line-height: 20px;
-    & li {
-        border-bottom: 1px solid #ccc;
-        padding: 3px 0;
-    }
-    & li span {
-        display: inline-block;
-        width: 300px;
+table {
+    font-size: 12px;
+}
+
+nav {
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+
+        &:hover, &.active {
+            background: #FFFFFF;
+            color: #000;
+            text-decoration: none;
+        }
     }
 }
 
 .admin-img {
     max-width: none;
+}
+
+.container {
+    max-width: 90%;
 }

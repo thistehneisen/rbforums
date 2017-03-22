@@ -16,6 +16,7 @@ let debug = require('gulp-debug');
 let rename = require('gulp-rename');
 let browserSync = require('browser-sync').create();
 let webpack = require('webpack-stream');
+let path = require("path");
 
 let prefix = 'forum';
 
@@ -103,7 +104,7 @@ gulp.task('pi', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src('assets/dev/js/app.js')
+    let app = gulp.src(['assets/dev/js/app.js'])
         .pipe(webpack({
             watch: true,
             output: {
@@ -120,11 +121,34 @@ gulp.task('js', function () {
                             presets: ['es2015']
                         }
                     }
-                ]
+                ],
             }
         }))
         .on('error', swallowError)
         .pipe(gulp.dest('assets/js/'));
+    let admin = gulp.src(['assets/dev/js/admin.js'])
+        .pipe(webpack({
+            watch: true,
+            output: {
+                filename: 'admin.js'
+            },
+            devtool: 'source-map',
+            module: {
+                loaders: [
+                    {
+                        test: /\.js$/,
+                        exclude: /node_modules/,
+                        loader: 'babel-loader',
+                        query: {
+                            presets: ['es2015']
+                        }
+                    }
+                ],
+            }
+        }))
+        .on('error', swallowError)
+        .pipe(gulp.dest('assets/js/'));
+    return merge(app, admin);
 });
 
 gulp.task('build', function (callback) {
@@ -144,7 +168,7 @@ gulp.task('serve', ['sass'], function () {
     });
 
     gulp.watch("assets/scss/**/*.scss", {interval: 500}, ['sass']);
-    gulp.watch("assets/dev/js/*.js", ['js']);
+    gulp.watch("assets/dev/js/{app,admin}.js", ['js']);
     gulp.watch("**/*.php", {interval: 500}).on('change', browserSync.reload);
     gulp.watch("assets/js/**/*.js", {interval: 500}).on('change', browserSync.reload);
 });

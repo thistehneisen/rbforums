@@ -60,6 +60,7 @@ class Router {
 
 		if(is_null($o->missing)) {
 			FWError::raise(404);
+			return false;
 		} else {
 			if(is_callable($o->missing)) {
 				return call_user_func_array($o->missing, URL::current());

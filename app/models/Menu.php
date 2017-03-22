@@ -6,8 +6,8 @@ class Menu {
         $data['menu'] = [];
         if(Auth::check()) {
             $data['menu'] = [
-                'day-1' => 'admin.day-1',
-                'day-2' => 'admin.day-2',
+                'day1' => 'admin.day-1',
+                'day2' => 'admin.day-2',
                 'media' => 'admin.media',
                 'contacts' => 'admin.contacts'
 //	            'export' => 'admin.export',

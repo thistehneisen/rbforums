@@ -633,11 +633,11 @@ Class DB {
                 if(is_array($value)) {
                     $w_st = '';
                     foreach($value as $v) {
-                        $w_st .= $v.',';
+                        $w_st .= '"'.$this->escape($v).'",';
                     }
                     $w_st = trim($w_st, ',');
                 }
-                $where .= ' `'.$this->escape(str_replace('.', '`.`', $field)).'` IN('.$this->escape($w_st).') AND';
+                $where .= ' `'.$this->escape(str_replace('.', '`.`', $field)).'` IN('.$w_st.') AND';
             }
         }
 

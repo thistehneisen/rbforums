@@ -5,7 +5,7 @@
         </div>
     <?php endif;?>
     <h1><?=trans('admin.login');?></h1>
-    <input type="text" name="email" placeholder="<?=trans('admin.email');?>" class="block full-width mb1 field-light" />
-    <input type="password" name="password" placeholder="<?=trans('admin.password');?>" class="block full-width mb1 field-light" />
-    <input type="submit" name="login" class="block full-width button" value="<?=trans('admin.login');?>" />
+    <input type="text" name="email" placeholder="<?=trans('admin.email');?>" class="block field col-12 mb1" />
+    <input type="password" name="password" placeholder="<?=trans('admin.password');?>" class="block field col-12 mb1" />
+    <input type="submit" name="login" class="block btn btn-primary col-12" value="<?=trans('admin.login');?>" />
 </form>

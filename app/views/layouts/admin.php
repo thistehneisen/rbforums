@@ -8,8 +8,9 @@
     <title><?=Config::get('app.title', '');?></title>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
 	<!--build:css /assets/css/admin.min.css-->
-	<link type="text/css" rel="stylesheet" href="/forum/assets/css/basscss.min.css">
+	<link type="text/css" rel="stylesheet" href="/forum/node_modules/sweetalert/dist/sweetalert.css">
 	<link type="text/css" rel="stylesheet" href="/forum/assets/css/admin.css">
 	<!--endbuild-->
     <meta content="<?=Config::get('app.description', '')?>" name="description" />
@@ -29,8 +30,7 @@
     <?= Menu::top(); ?>
     <?= $content; ?>
 	<!--build:js /assets/js/admin.min.js-->
-	<script type="text/javascript" src="/forum/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/admin.js"></script>
+    <script src="/forum/assets/js/admin.js"></script>
 	<!--endbuild-->
     <?= Asset::GA(null); ?>
 </body>

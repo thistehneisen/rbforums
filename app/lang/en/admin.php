@@ -39,4 +39,8 @@
 	'bans' => 'Bani',
 	'bans_150' => 'Bani 150 lapā',
 	'export' => 'Eksportēt',
+    'day-1' => 'Pirmā diena',
+    'day-2' => 'Otrā diena',
+    'media' => 'Medijiem',
+    'contacts' => 'Kontakti',
 ];
