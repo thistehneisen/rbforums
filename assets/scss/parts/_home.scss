@@ -53,10 +53,44 @@ section {
             width: 100%;
             max-width: 1154px;
             box-sizing: border-box;
-            padding: 200px 575px 0 40px;
+            padding: 160px 575px 0 40px;
 
             .hl {
                 color: #3396d9;
+            }
+
+            .play {
+                background: #ffbf01;
+                display: block;
+                box-sizing: border-box;
+                color: #FFFFFF;
+                font-size: 15px;
+                position: relative;
+                padding: 12px 75px 12px 23px;
+                font-weight: normal;
+
+                &:before, &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                }
+                &:before {
+                    left: 10px;
+                    top: -18px;
+                    background: transparent url(../img/exclamation.png) 0 0 no-repeat;
+                    width: 16px;
+                    height: 62px;
+                    line-height: 18px;
+                }
+
+                &:after {
+                    background: transparent url(../img/play-button.png) 0 0 no-repeat;
+                    width: 45px;
+                    height: 45px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 15px;
+                }
             }
 
         }

@@ -13,6 +13,10 @@
     </div>
 
     <div class="about-text">
+        <div class="play">
+            Live video stream from both Forum days will be accessible via this page<br>
+            as soon as the event starts. Please revisit this page and just click on a link.
+        </div>
         <p>“Rail Baltica project provides opportunities that must be seen today, to be able to use them tomorrow. It is a unique, large-scale and complex trans-national infrastructure project to form the new economic corridor, which will closely connect the North East of Europe with the rest of the Union. Hope to see you in Riga in April! We can bring the best ideas, practice and solutions together to link nations, people, and places.”</p>
 
         <p class="hl">Baiba Rubesa, CEO of JV RB Rail</p>
