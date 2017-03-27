@@ -171,7 +171,7 @@
                         <label for="form2-full_suppliers_list">
                             I want to receive the full list of suppliers and their contacts participating in DAY 2 “Industry Supplier’s Day”, as well as to include my contact information in the List. (The List will be shared only with those who had given permission to include their contacts in it.)
                         </label>
-                        <?= Form::checkbox( 'cs_visit', '1', ( old( 'cs_visit', 0 ) == 1 ) , ['id'=> 'form2-cs_visit']); ?>
+                        <?= Form::checkbox( 'cs_visit', '1', ( old( 'cs_visit', 0 ) == 1 ) , ['id'=> 'form2-cs_visit', 'disabled' => 'disabled']); ?>
                         <label for="form2-cs_visit">
                             I apply for the on-the-spot visit to the Riga Central Railway Station
                         </label>
