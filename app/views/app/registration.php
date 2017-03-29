@@ -173,7 +173,7 @@
                         </label>
                         <?= Form::checkbox( 'cs_visit', '1', ( old( 'cs_visit', 0 ) == 1 ) , ['id'=> 'form2-cs_visit', 'disabled' => 'disabled']); ?>
                         <label for="form2-cs_visit">
-                            I apply for the on-the-spot visit to the Riga Central Railway Station
+                            I apply for the on-the-spot visit to the Riga Central Railway Station. Registration closed. The limit has been reached.
                         </label>
                     </div>
                     <div class="col">

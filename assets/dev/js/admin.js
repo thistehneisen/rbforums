@@ -159,6 +159,23 @@ $(function () {
         });
     });
 
+    $(document).on('click', '.del-media-2', function (event) {
+        event.preventDefault();
+        let el = $(this);
+        swal({
+            title: "Tiešām?",
+            text: "Nospiežot OK, pieteikums tiks neatgriezeniski dzēsts bez paziņojuma dalībniekam!",
+            type: "error",
+            showCancelButton: true,
+            // confirmButtonColor: "DD6B55",
+            confirmButtonText: "Esam ļauni!",
+            closeOnConfirm: false,
+            html: false
+        }, function(){
+            $.setStatus('media', el, -2);
+        });
+    });
+
     $(document).on('click', '.ney-media-2', function (event) {
         event.preventDefault();
         let el = $(this);

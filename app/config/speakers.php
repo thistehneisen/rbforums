@@ -73,6 +73,12 @@ Dins Merirands has an academic master’s degree in legal science, as well as an
         'picture' => 'RB_speakers_color_Dins-Merirands.png',
     ],
     [
+        'name' => 'Jakub Kapturzak',
+        'position' => 'Deputy Director of Department of Railway Transport, Ministry of Infrastructure and Construction of Republic of Poland',
+        'about' => 'Jakub Kapturzak have graduated the Faculty of Law from Adam Mickiewicz University and attended National School of Public Administration in Warsaw. Since 2004 he have worked in Ministry of Finance, first as Senior Expert then as Head of Unit. In Ministry of Finance he was engaged in financing the transport sector. Since 2010 Jakub Kapturzak is Deputy Director of Railway Department responsible among others for international affairs and passenger service, however in 2014-2016 he was a Managing Director of North Sea - Baltic Rail Freight Corridor.',
+        'picture' => 'RB_speakers_color_jakub_kapturzak.png',
+    ],
+    [
         'name' => 'Emile Quinet',
         'position' => 'Associate Member, Ecole des Ponts – ParisTech, France',
         'about' => 'Emile Quinet is both an academic scholar, author of about 20 books and 300 articles, communications and research reports, and an international expert in transport, public economics and management of public and semi-public organizations. He participated in many consultancies on project assessment, feasibility studies and strategic master plans as well as recommendations on productivity studies and regulation procedures of public undertakings, both for specific countries and for international organizations (especially in France, Algeria, India, Italy, the UK, and for UNO, OECD, the World Bank). He recently achieved a report to the French Government on “Cost benefit assessment of public investment in France” (Paris, Commissariat Général à la Stratégie et à la Prospective), which was implemented in official guidelines.',
@@ -124,6 +130,14 @@ In recent years he has been working on a series of projects financed by the EU I
 Emils Rode is a senior expert at Live Baltic Campus project, of which he was one of the initiators. This project, running from 2015 to 2017, is about jointly developing best practice in planning university campuses as hubs of knowledge in Sweden, Finland, Estonia, and Latvia.
 ',
         'picture' => 'RB_speakers_color_emils_rode.png',
+    ],
+    [
+        'name' => 'Arnis B. Kakulis',
+        'position' => 'Director of the Baltic Region, AECOM',
+        'about' => 'Since 2007, Arnis Kakulis has served as the Director of the Baltic Region for AECOM.  His focus is to direct complex project engagements with various business sector clients specifically in strategic planning and design management. He is also currently the AECOM Transportation business line leader in the Baltics. His clients have included Ministry of Transportation of the Republic of Latvia, Ministry of Transport and Communication of the Republic of Lithuania, Estonian Technical Surveillance Authority, Barclays Bank PLC, Microsoft Corporation, Pfizer, TK Development, Kempinski, Towers Construction Management, and AFI Europe.
+His daily activities include strategic planning & advisory consulting, process design, program/project management, stakeholder relations, design & construction.
+Arnis Kakulis earned both his Master of Architecture and Master in Urban Planning at the University of Wisconsin-Milwaukee School of Architecture and Urban Planning. He received his Bachelor of Science in Architectural Studies at the University of Wisconsin-Milwaukee as well. His skills in facilitation, strategic planning, programming and process design provide the requisite background to assist and enable clients to make informed decisions about their real estate and infrastructure assets.',
+        'picture' => 'RB_speakers_color_arnis_kakulis.png',
     ],
     [
         'name' => 'Agnis Driksna',
