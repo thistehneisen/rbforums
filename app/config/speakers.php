@@ -104,7 +104,7 @@ Dins Merirands has an academic master’s degree in legal science, as well as an
     ],
     [
         'name' => 'Raimonds Aronietis',
-        'position' => 'Policy Analyst - Freight, International Transport Forum at the OECD',
+        'position' => 'Policy Analyst, International Transport Forum at the OECD',
         'about' => 'Dr. Raimonds Aronietis is a Policy Analyst at the International Transport Forum at the OECD, where he contributes to transport research and policy analysis work. Previously he has worked as a senior researcher in the Department of Transport and Regional Economics at the University of Antwerp. In 2013 he defended his PhD on the topic of "Successful Development and Implementation of Transport Policy Innovations". His work experience includes Transport market analyst work in Road Transport Administration of Latvia. He graduated from Riga Technical University masters programme in logistics entrepreneurship and transport economy in 2004.',
         'picture' => 'RB_speakers_Raimonds_Aronietis.png',
     ],
