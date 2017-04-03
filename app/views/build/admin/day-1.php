@@ -10,9 +10,9 @@
 ?>
 <section class="container px2 py3">
     <div class="right">
-        <a href="<?= URL::to('admin/' . $link);?>" class="btn btn-primary mb1 <?= ($tab == 'new' ? 'bg-gray' : '');?>">Neapstrādātie</a>
-        <a href="<?= URL::to('admin/' . $link . '/approved/');?>" class="btn btn-primary mb1 <?= ($tab == 'approved' ? 'bg-gray' : '');?>">Apstiprinātie</a>
-        <a href="<?= URL::to('admin/' . $link. '/disapproved/');?>" class="btn btn-primary mb1 <?= ($tab == 'disapproved' ? 'bg-gray' : '');?>">Noraidītie</a>
+        <a href="<?= URL::to( 'admin/' . $link ); ?>" class="btn btn-primary mb1 <?= ( $tab == 'new' ? 'bg-gray' : '' ); ?>">Neapstrādātie</a>
+        <a href="<?= URL::to( 'admin/' . $link . '/approved/' ); ?>" class="btn btn-primary mb1 <?= ( $tab == 'approved' ? 'bg-gray' : '' ); ?>">Apstiprinātie</a>
+        <a href="<?= URL::to( 'admin/' . $link . '/disapproved/' ); ?>" class="btn btn-primary mb1 <?= ( $tab == 'disapproved' ? 'bg-gray' : '' ); ?>">Noraidītie</a>
     </div>
     <div class="clearfix"></div>
     <?php if ( ! $items->isEmpty() ) : ?>
@@ -25,11 +25,13 @@
             <table class="table-light overflow-hidden bg-white border rounded">
                 <thead class="bg-darken-1">
                 <tr>
-                    <?php if($tab == 'new') :?>
-                        <th> </th>
-                        <th> </th>
-                        <th> </th>
-                    <?php endif;?>
+                    <?php if ( $tab == 'new' ) : ?>
+                        <th></th>
+                        <th></th>
+                    <?php endif; ?>
+                    <?php if ( $tab == 'new' || $tab == 'approved' ) : ?>
+                        <th></th>
+                    <?php endif; ?>
                     <th>Kods</th>
                     <th>Vārds, Uzvārds</th>
                     <th>Uzruna</th>
@@ -46,23 +48,25 @@
                 </thead>
                 <?php foreach ( $items as $item ) : ?>
                     <tr>
-                        <?php if($tab == 'new') :?>
-                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-green btn-small white m0 ok-day-1">jā</a></td>
-                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-red btn-small white m0 ney-day-1">nē</a></td>
-                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-fuchsia btn-small lime m0 del-day-1">dzēst</a></td>
+                        <?php if ( $tab == 'new' ) : ?>
+                            <td class="p0 py1 px1"><a href="#" data-id="<?= $item->id; ?>" class="btn btn-primary bg-green btn-small white m0 ok-day-1">jā</a></td>
+                            <td class="p0 py1 px1"><a href="#" data-id="<?= $item->id; ?>" class="btn btn-primary bg-red btn-small white m0 ney-day-1">nē</a></td>
                         <?php endif; ?>
-                        <td><?=arrayGet($codes, $item->code_id, 'nezināms');?></td>
-                        <td><?=$item->first_name;?> <?=$item->last_name;?></td>
-                        <td><?=$item->salutation;?></td>
-                        <td><?=$item->title;?></td>
-                        <td><?=$item->email;?></td>
-                        <td><?=$item->phone;?></td>
-                        <td><?=($item->need_visa_invite == 1 ? 'Jā' : 'Nē');?></td>
-                        <td><?=$item->company;?></td>
-                        <td><?=$item->industry;?></td>
-                        <td><?=$item->position;?></td>
-                        <td><?=getCountry($item->country);?></td>
-                        <td><?=$item->city;?></td>
+                        <?php if ( $tab == 'new' || $tab == 'approved' ) : ?>
+                            <td class="p0 py1 px1"><a href="#" data-id="<?= $item->id; ?>" class="btn btn-primary bg-fuchsia btn-small lime m0 del-day-1">dzēst</a></td>
+                        <?php endif; ?>
+                        <td><?= arrayGet( $codes, $item->code_id, 'nezināms' ); ?></td>
+                        <td><?= $item->first_name; ?> <?= $item->last_name; ?></td>
+                        <td><?= $item->salutation; ?></td>
+                        <td><?= $item->title; ?></td>
+                        <td><?= $item->email; ?></td>
+                        <td><?= $item->phone; ?></td>
+                        <td><?= ( $item->need_visa_invite == 1 ? 'Jā' : 'Nē' ); ?></td>
+                        <td><?= $item->company; ?></td>
+                        <td><?= $item->industry; ?></td>
+                        <td><?= $item->position; ?></td>
+                        <td><?= getCountry( $item->country ); ?></td>
+                        <td><?= $item->city; ?></td>
                     </tr>
                 <?php endforeach; ?>
             </table>

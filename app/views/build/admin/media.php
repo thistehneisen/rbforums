@@ -29,6 +29,9 @@
                         <th> </th>
                         <th> </th>
                     <?php endif;?>
+                    <?php if($tab == 'approved') :?>
+                        <th> </th>
+                    <?php endif ;?>
                     <th>Vārds, Uzvārds</th>
                     <th>E-pasts</th>
                     <th>Tel.</th>
@@ -44,8 +47,10 @@
                         <?php if($tab == 'new') :?>
                             <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-green btn-small white m0 ok-media-2">jā</a></td>
                             <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-red btn-small white m0 ney-media-2">nē</a></td>
-                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-fuchsia btn-small lime m0 del-media-2">dzēst</a></td>
                         <?php endif; ?>
+                        <?php if($tab == 'new' || $tab == 'approved') :?>
+                            <td class="p0 py1 px1"><a href="#" data-id="<?=$item->id;?>" class="btn btn-primary bg-fuchsia btn-small lime m0 del-media-2">dzēst</a></td>
+                        <?php endif;?>
                         <td><?=$item->name_surname;?></td>
                         <td><?=$item->email;?></td>
                         <td><?=$item->phone;?></td>
