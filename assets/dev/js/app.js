@@ -6,7 +6,7 @@ $(function () {
 
     setTimeout(function () {
         let pathArray = window.location.pathname.split( '/' );
-        if(pathArray.length > 2 && pathArray[2] != '') {
+        if(pathArray.length > 2 && pathArray[2] !== '') {
             clicks_scrollTo(pathArray[2], $('#' + pathArray[2]), window.location.href);
         }
 
@@ -52,7 +52,8 @@ $(function () {
         $('.main-navigation a').removeClass('active');
         let regExp = new RegExp('(https?:)?' + BASE_URL);
         let cl = el.prop('href').replace(regExp, '');
-        $('.main-navigation').find('.' + cl).addClass('active');
+        let navClass = '.' + cl;
+        $('.main-navigation').find(navClass).addClass('active');
         clicks_scrollTo(el.data('id'), $('#' + el.data('id')), el.prop('href'));
     });
 
@@ -66,7 +67,7 @@ $(function () {
         let el = $(this);
         $('.registration .buttons a').removeClass('active');
         el.addClass('active');
-        if(el.data('form') == 'day1') {
+        if(el.data('form') === 'day1') {
             form2.slideUp();
             form1.slideDown();
         } else {
@@ -103,7 +104,7 @@ $(function () {
         let text = $this.children('option').eq(0).text();
         $styledSelect.text(text);
 
-        if (text == 'Choose') {
+        if (text === 'Choose') {
             $styledSelect.addClass('choose');
         }
 
@@ -137,6 +138,7 @@ $(function () {
             $styledSelect.text($(this).text()).removeClass('active').removeClass('choose');
             $this.val($(this).attr('rel'));
             $list.hide();
+            $this.trigger('change');
         });
 
         $(document).click(function () {
@@ -173,13 +175,13 @@ $(function () {
         event.preventDefault();
         let el = $(this);
         let code = $('#registration_code').val();
-        if (code != '') {
+        if (code !== '') {
             el.addClass('loading').removeClass('error');
             $.post(BASE_URL + 'validate-code',
                 {
                     code: code
                 }, function (response) {
-                    if (response.ok == 'ok') {
+                    if (response.ok === 'ok') {
                         $('.col', form1).removeClass('disabled');
                         $('input[type=text], select', form1).prop('disabled', false);
                         $('#need_visa_invite, #potential_supplier, #register-form1', form1).prop('disabled', false);
@@ -210,7 +212,7 @@ $(function () {
             $(this).addClass('loading');
             let data = form1.find('form').serializeArray();
             $.post(BASE_URL + 'register-form-1', data, function (response) {
-                if(response.success == 'ok') {
+                if(response.success === 'ok') {
                     $('#register-form1').slideUp();
                     $('#form1').find('.thanks').slideDown();
                 }
@@ -224,7 +226,7 @@ $(function () {
             $(this).addClass('loading');
             let data = form2.find('form').serializeArray();
             $.post(BASE_URL + 'register-form-2', data, function (response) {
-                if(response.success == 'ok') {
+                if(response.success === 'ok') {
                     $('#register-form2').slideUp();
                     $('#form2').find('.thanks').slideDown();
                 }
@@ -245,7 +247,7 @@ $(function () {
             $(this).addClass('loading');
             let data = form3.find('form').serializeArray();
             $.post(BASE_URL + 'register-form-3', data, function (response) {
-                if(response.success == 'ok') {
+                if(response.success === 'ok') {
                     $('#register-form3').slideUp();
                     $('#form3').find('.thanks').slideDown();
                 }
@@ -259,7 +261,7 @@ $(function () {
             $(this).addClass('loading');
             let data = form4.find('form').serializeArray();
             $.post(BASE_URL + 'register-form-4', data, function (response) {
-                if(response.success == 'ok') {
+                if(response.success === 'ok') {
                     form4.find('.thanks').slideDown();
                     form4.find('form').slideUp();
                 }
@@ -293,7 +295,66 @@ $(function () {
         width: "680px",
         height: "280px"
     }, {"dom":{}}, {"dom":{}});
+
+
+    /**
+     * suppliers
+     */
+
+    $('#suppliers_search_type').change(function () {
+        let type = $(this).val();
+        let alphabet = $('.alphabet');
+        let industry = $('.industry-selector');
+        if(type === 'alphabet') {
+            alphabet.show();
+            industry.hide();
+            getSuppliers({
+                type: type,
+                key: $('.suppliers_search_letter.active').data('letter')
+            });
+        } else {
+            alphabet.hide();
+            industry.show();
+            getSuppliers({
+                type: type,
+                key: $('#suppliers_search_industry').val()
+            });
+        }
+    });
+
+    $('#suppliers_search_industry').change(function () {
+        getSuppliers({
+            type: 'industry',
+            key: $(this).val()
+        });
+    });
+
+    $('.suppliers_search_letter').click(function (event) {
+        event.preventDefault();
+        $('.suppliers_search_letter').removeClass('active');
+        $(this).addClass('active');
+        getSuppliers({
+            type: 'alphabet',
+            key: $(this).data('letter')
+        });
+    });
 });
+
+function getSuppliers(options) {
+    let postSettings = {
+        type: options.type || 'alphabet',
+        key: options.key || 'A'
+    };
+    let loader = $('#suppliers-loader');
+    loader.show();
+    $.post(BASE_URL + 'get-suppliers', postSettings, function (response) {
+        if(response.success === 'ok') {
+            $('#suppliers-companies').html(response.html);
+        }
+        loader.hide();
+    }, 'json');
+
+}
 
 function validFormData(form) {
     let validated = true;
@@ -313,14 +374,14 @@ function elIsValid(el) {
         for(let i = 0; i < validate.length; i++) {
             switch (validate[i]) {
                 case 'require':
-                    if(val == '') {
+                    if(val === '') {
                         validated = false;
-                        if(el.attr('type') == 'checkbox') {
+                        if(el.attr('type') === 'checkbox') {
                             el.next('label').addClass('error');
                         } else {
                             el.prev('label').addClass('error');
                         }
-                    } else if(el.is('select') && val == 'hide') {
+                    } else if(el.is('select') && val === 'hide') {
                         $('label[for=' + el.attr('id') + ']').addClass('error');
                     }
                     break;
@@ -343,9 +404,9 @@ function clicks_scrollTo(id, element, url) {
     element = element || (function () {
             let newId = false;
             let tempId = id;
-            if (id == 'index') tempId = '';
+            if (id === 'index') tempId = '';
             $('.menu').each(function () {
-                if ($(this).data('id') == tempId) newId = $(this);
+                if ($(this).data('id') === tempId) newId = $(this);
             });
             return newId;
         })() || false;
@@ -356,7 +417,7 @@ function clicks_scrollTo(id, element, url) {
         element.addClass('active');
     }
 
-    if (id == '' || id == 'home') {
+    if (id === '' || id === 'home') {
         $('html, body').animate({
             scrollTop: '0px'
         });
@@ -368,13 +429,13 @@ function clicks_scrollTo(id, element, url) {
             });
         }
     }
-    id = (id == 'home' ? '' : id);
+    id = (id === 'home' ? '' : id);
     url = url || BASE_URL + id;
     history.pushState('', '', url);
 }
 
 function isValidEmailAddress(emailAddress) {
     let pattern;
-    pattern = /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})]?$)/i;
+    pattern = /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
     return pattern.test(emailAddress);
 }

@@ -6,4 +6,4 @@
     </div>
 </section>
 
-<footer></footer>
+<footer class="main"></footer>

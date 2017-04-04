@@ -12,7 +12,7 @@
 	<title><?= Config::get( 'app.title', '' ); ?></title>
 	<meta charset="utf-8"/>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-	<link rel="stylesheet" href="/forum/assets/css/styles-b6828dff7d.min.css">
+	<link rel="stylesheet" href="/forum/assets/css/styles-6247a02246.min.css">
 	<meta content="<?= Config::get( 'app.description', '' ) ?>" name="description"/>
 	<script type="text/javascript">
 		var BASE_URL = '<?= URI::base(); ?>';
@@ -29,7 +29,7 @@
 
 <?= $content; ?>
 
-<script src="/forum/assets/js/app-78534b7812.min.js"></script>
+<script src="/forum/assets/js/app-505d458e57.min.js"></script>
 
 <?= Asset::GA( Config::get( 'app.ga_code' ) ); ?>
 </body>

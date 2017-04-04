@@ -624,7 +624,14 @@ Class DB {
                 if(!isset($params[1])) {
                     $params[1] = '=';
                 }
-                $where .= ' `'.$this->escape(str_replace('.', '`.`', $params[0])).'` '.$this->escape($params[1]).' "'.$this->escape($value).'" AND';
+
+                if(preg_match('/^(.*)(\s{1}collate\s{1}.*)$/i', $value, $r)) {
+                    $value = '"'. $this->escape($r[1]).'" '.$this->escape($r[2]);
+                } else {
+                    $value = '"'. $this->escape($value).'"';
+                }
+
+                $where .= ' `'.$this->escape(str_replace('.', '`.`', $params[0])).'` '.$this->escape($params[1]).' '.$value.' AND';
             }
         }
         if(is_array($this->where_in)) {

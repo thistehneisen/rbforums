@@ -10,6 +10,7 @@ Router::post('register-form-1', 'AppController@registerOne');
 Router::post('register-form-2', 'AppController@registerTwo');
 Router::post('register-form-3', 'AppController@registerThree');
 Router::post('register-form-4', 'AppController@registerContacts');
+Router::post('get-suppliers', 'AppController@getSuppliers');
 Router::get('/(.*)', 'AppController@getIndex');
 Router::get('/', 'AppController@getIndex');
 
