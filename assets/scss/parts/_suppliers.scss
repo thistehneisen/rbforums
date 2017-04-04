@@ -91,11 +91,13 @@ section.suppliers {
                     column-span: all;
                     box-sizing: border-box;
                     p {
+                        display: inline-block;
                         margin: 0 0 20px;
                         font-size: 16px;
                         font-family:MyriadPro, sans-serif;
                         color: #5d5d5d;
                         box-sizing: border-box;
+                        width: 100%;
                     }
                 }
                 .loader {
