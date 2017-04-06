@@ -126,7 +126,7 @@
                     <p><strong>During DAY 2  supplier's are also offered to:</strong></p>
                     <ul>
                         <li>attend special Suppliers' Meeting point for future partnerships and contact building;</li>
-                        <li>participate in the Suppliers' Meeting point with your info stand following the principle of first-come, first-served as there is a limited number of spaces available. If you are interested in placing your info stand, please indicate it in the registration form by first reading the instruction;</li>
+                        <li>participate in the Suppliers' Meeting point with your info stand following the principle of first-come, first-served as there is a limited number of spaces available. If you are interested in placing your info stand, please indicate it in the registration form by first reading the instruction.  <span class="hl">Registration closed. The limit has been reached.</span></li>
                         <li>special on-the-spot visit to the site – Riga Central Railway Station. Detailed information about the technicalities of the visit will be sent to interested suppliers directly by e-mail. <span class="hl">Registration closed. The limit has been reached.</span></li>
                     </ul>
 
@@ -163,7 +163,7 @@
                         <label for="form2-need_visa_invite">
                             I need invitation for Visa
                         </label>
-                        <?= Form::checkbox( 'info_stand', '1', ( old( 'info_stand', 0 ) == 1 ), ['id'=> 'form2-info_stand'] ); ?>
+                        <?= Form::checkbox( 'info_stand', '1', ( old( 'info_stand', 0 ) == 1 ), ['id'=> 'form2-info_stand', "disabled" => 'disabled'] ); ?>
                         <label for="form2-info_stand">
                             I need a place for info stand in the Suppliers' Meeting point
                         </label>

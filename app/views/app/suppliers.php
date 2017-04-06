@@ -43,8 +43,7 @@
             <footer>
                 <aside>
                     <h3>SUPPLIERS' MEETING POINT</h3>
-                    <div class="entry">A special meeting point area will be provided in order to support suppliers' partnerships and contact building. In this area there is a possibility to apply for a limited number of spaces for your info stand (first-come, first-served principle!).
-                        To apply, please go to the registration form for Day 2.</div>
+                    <div class="entry">A special meeting point area will be provided in order to support suppliers' partnerships and contact building. In this area there is a possibility to apply for a limited number of spaces for your info stand. <span class="hl">(Registration closed. The limit has been reached.)</span></div>
                 </aside>
                 <aside>
                     <h4>Technical information about info stands (PDF file)</h4>

@@ -195,6 +195,8 @@ class AppController extends BaseController {
                 'ip'       => Request::ip(),
                 'agent'    => Request::agent(),
                 'pubstamp' => time(),
+                'info_stand' => 0, // disabled info stand
+                'cs_visit' => 0, // disabled excursion
             ] ) );
 
             $response['success'] = 'ok';

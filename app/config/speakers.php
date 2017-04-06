@@ -27,6 +27,15 @@ Before joining the Government he served as CEO and later also as a member of the
         'picture' => 'RB_speakers_color_Rokas-Masiulis-2.png',
     ],
     [
+        'name' => 'Andrzej Adamczyk',
+        'position' => 'Minister of Infrastructure and Construction, Republic of Poland',
+        'about' => 'On November, 16th, 2015 appointed for the position of Minister of Infrastructure and Construction.
+Since 2005 Andrzej Adamczyk has been a Member of Parliament for the V, VI, VII and VIII terms of office. Long-term deputy chairman of the Parliamentary Committee of Infrastructure and member of the Commission for Poles Abroad. He participated at the work of subcommittees on construction as well as spatial and housing management, on monitoring the use of EU funds and on land transport.
+Andrzej Adamczyk specializes in construction issues, as well as road and rail infrastructure. In parliament he dealt with, inter alia, the governmental draft law on road companies of special purpose, the amendment of the "Construction Law" and draft law on simplification of the investment process in housing. He actively participated at the work on the amendment of the law on housing cooperatives. As the councilor of the Cracow county for two terms of office, he chaired the Infrastructure Committee.
+Andrzej Adamczyk has a university degree. He is a member of the Małopolska Chamber of Civil Engineers.',
+        'picture' => 'RB_speakers_color_Adamczyk_Andrzej.png',
+    ],
+    [
         'name' => 'Herald Ruijters',
         'position' => 'Director for Investment, Innovative and Sustainable Transport, DG MOVE, EU Commission',
         'about' => 'Since 1 February 2017, Herald Ruijters is the Director responsible for Directorate B - Investment, Innovative & Sustainable Transport in DG Mobility and Transport, while at the same time continuing as Head of Unit responsible for the Trans European Network (TEN-T). He assumed the role of Head of Unit in 2009 and has been directly involved in developing the TEN-T Guidelines.
@@ -110,7 +119,7 @@ Dins Merirands has an academic master’s degree in legal science, as well as an
     ],
     [
         'name' => 'Nauris Kļava',
-        'position' => 'Director of the Management Consultations Department, Ernst & Young Baltic Ltd',
+        'position' => 'Partner, Ernst & Young Baltic Ltd',
         'about' => 'Nauris Kļava joined EY Latvia in 2002 and since 2016 he is a Partner in EY Latvia Advisory Services department with a wide range of experience in banking and financial services, utilities and transportation. His main areas of specialization are feasibility evaluation; cost benefit analysis; development of strategic (policy) documents; preparation of feasibility studies; risk management consultations and business process analysis. Nauris Kļava has a Master’s degree in Public Administration from University of Latvia and Bachelor’s degree in Business Administration and Economics from Stockholm School of Economics in Riga. He is also a Member of Association of Chartered Certified Accountants (ACCA) and a Prince2 registered Project Management Practitioner.',
         'picture' => 'RB_speakers_color_Nauris_Klava.png',
     ],
@@ -132,11 +141,11 @@ Emils Rode is a senior expert at Live Baltic Campus project, of which he was one
         'picture' => 'RB_speakers_color_emils_rode.png',
     ],
     [
-        'name' => 'Arnis B. Kakulis',
+        'name' => 'Arnis B. Kākulis',
         'position' => 'Director of the Baltic Region, AECOM',
-        'about' => 'Since 2007, Arnis Kakulis has served as the Director of the Baltic Region for AECOM.  His focus is to direct complex project engagements with various business sector clients specifically in strategic planning and design management. He is also currently the AECOM Transportation business line leader in the Baltics. His clients have included Ministry of Transportation of the Republic of Latvia, Ministry of Transport and Communication of the Republic of Lithuania, Estonian Technical Surveillance Authority, Barclays Bank PLC, Microsoft Corporation, Pfizer, TK Development, Kempinski, Towers Construction Management, and AFI Europe.
+        'about' => 'Since 2007, Arnis Kākulis has served as the Director of the Baltic Region for AECOM.  His focus is to direct complex project engagements with various business sector clients specifically in strategic planning and design management. He is also currently the AECOM Transportation business line leader in the Baltics. His clients have included Ministry of Transportation of the Republic of Latvia, Ministry of Transport and Communication of the Republic of Lithuania, Estonian Technical Surveillance Authority, Barclays Bank PLC, Microsoft Corporation, Pfizer, TK Development, Kempinski, Towers Construction Management, and AFI Europe.
 His daily activities include strategic planning & advisory consulting, process design, program/project management, stakeholder relations, design & construction.
-Arnis Kakulis earned both his Master of Architecture and Master in Urban Planning at the University of Wisconsin-Milwaukee School of Architecture and Urban Planning. He received his Bachelor of Science in Architectural Studies at the University of Wisconsin-Milwaukee as well. His skills in facilitation, strategic planning, programming and process design provide the requisite background to assist and enable clients to make informed decisions about their real estate and infrastructure assets.',
+Arnis Kākulis earned both his Master of Architecture and Master in Urban Planning at the University of Wisconsin-Milwaukee School of Architecture and Urban Planning. He received his Bachelor of Science in Architectural Studies at the University of Wisconsin-Milwaukee as well. His skills in facilitation, strategic planning, programming and process design provide the requisite background to assist and enable clients to make informed decisions about their real estate and infrastructure assets.',
         'picture' => 'RB_speakers_color_arnis_kakulis.png',
     ],
     [
