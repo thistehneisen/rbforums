@@ -23,7 +23,8 @@ section.registration {
             width: 100%;
             a {
                 display: block;
-                width: 50%;
+                //width: 50%;
+                width: 100%;
                 float: left;
                 background: #e6e6e6;
                 text-decoration: none;
@@ -36,17 +37,21 @@ section.registration {
                 box-sizing: border-box;
                 padding: 20px 0 0;
                 line-height: 27px;
+                margin: 0 auto;
+
+                text-align: center;
 
                 &.active {
                     background: #FFFFFF;
                 }
 
                 span {
-                    display: block;
+                    display: inline-block;
+                    //text-align: left;
 
                     max-width: 300px;
-                    float: right;
-                    margin-right: 120px;
+                    //float: right;
+                    //margin-right: 120px;
                     text-transform: uppercase;
                     vertical-align: middle;
 
@@ -58,14 +63,14 @@ section.registration {
                     }
                 }
 
-                &:last-of-type {
-                    padding-top: 45px;
-                    span {
-                        float: left;
-                        margin-right: 0;
-                        margin-left: 120px;
-                    }
-                }
+                //&:last-of-type {
+                //    padding-top: 45px;
+                //    span {
+                //        float: left;
+                //        margin-right: 0;
+                //        margin-left: 120px;
+                //    }
+                //}
 
             }
         } // .buttons

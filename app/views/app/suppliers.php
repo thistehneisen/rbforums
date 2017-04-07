@@ -11,6 +11,7 @@
                 <h1>SUPPLIERS' NETWORKING</h1>
                 <h2>The Industry Suppliers' Day - a platform for building cooperation bridges</h2>
                 <h3>LIST OF SUPPLIERS</h3>
+                <p>Take the advantage to find and network with other companies which could be of interest to you.</p>
             </header>
             <div class="entry">
                 <?= Form::open() ;?>
@@ -26,6 +27,7 @@
                     </div>
                 </div>
                 <div class="clearfix"></div>
+                <div class="help-block">If you want to receive the full list of Supplier day participants and their contacts please note it during registration for DAY 2. The list will be shared only with those who had given permission to include their contacts in it.</div>
                 <div class="loader" id="suppliers-loader" style="display: none;"></div>
                 <div class="companies" id="suppliers-companies">
                     <?php if ( ! $companies->isEmpty() ) : ?>

@@ -59,13 +59,13 @@ Rubesa was educated in Toronto, Canada at York University and Shaw colleges.
 ',
         'picture' => 'RB_speakers_color_Baiba_Rubesa.png',
     ],
-    [
-        'name' => 'Indrek Orav',
-        'position' => 'Member of the Board, Rail Baltic Estonia; Member of Supervisory Board, RB Rail AS',
-        'about' => 'Indrek Orav leads Rail Baltic Estonia, which is one of the implementing bodies for the Rail Baltica project in Estonia. 2004-2009 Indrek Orav worked in Estonian Railways first as one of the directors and later as a Management Board member. Rail Baltic Estonia is a company representing the interests of the Republic of Estonia in the Joint Venture RB Rail AS, set up by the three countries in Riga for management of the whole project. Indrek Orav has obtained a Master\'s degree in Law in Tartu University and degree in Diplomacy and International Relations in the Estonian School of Diplomacy.
-',
-        'picture' => 'RB_speakers_color_Indrek-Orav.png',
-    ],
+//    [
+//        'name' => 'Indrek Orav',
+//        'position' => 'Member of the Board, Rail Baltic Estonia; Member of Supervisory Board, RB Rail AS',
+//        'about' => 'Indrek Orav leads Rail Baltic Estonia, which is one of the implementing bodies for the Rail Baltica project in Estonia. 2004-2009 Indrek Orav worked in Estonian Railways first as one of the directors and later as a Management Board member. Rail Baltic Estonia is a company representing the interests of the Republic of Estonia in the Joint Venture RB Rail AS, set up by the three countries in Riga for management of the whole project. Indrek Orav has obtained a Master\'s degree in Law in Tartu University and degree in Diplomacy and International Relations in the Estonian School of Diplomacy.
+//',
+//        'picture' => 'RB_speakers_color_Indrek-Orav.png',
+//    ],
     [
         'name' => 'Dainius Budrys',
         'position' => 'Director, Rail Baltica statyba; Member of Supervisory Board, RB Rail AS',
@@ -112,10 +112,24 @@ Dins Merirands has an academic master’s degree in legal science, as well as an
         'picture' => 'RB_speakers_color_Dominique_Deau.png'
     ],
     [
+        'name' => 'Philippe Citroën',
+        'position' => 'Director General, UNIFE',
+        'about' => 'Philippe Citroën joined UNIFE in 2011 as Director General. He began his career as Transport Advisor at the French Permanent Representation to the EU and then became Member of the Cabinet of the French Transport Minister. In 1993 he became Manager and Chief of Staff at RATP Paris, and joined the SNCF as Strategy Director in 1999. Prior to assuming his position at UNIFE, he served for 8 years as CEO of Systra, one of the world’s leading public transport engineering companies. 
+Philippe Citroën is a graduate of Paris II University in Public Law, holds a Diploma from the Paris Institute of Political Studies (Sciences Po) and also studied at the Ecole Nationale d\'Administration (ENA), where he also lectured about Rail and Urban Transport.',
+        'picture' => 'RB_speakers_color_Philippe_Citroen.png',
+    ],
+    [
         'name' => 'Raimonds Aronietis',
         'position' => 'Policy Analyst, International Transport Forum at the OECD',
         'about' => 'Dr. Raimonds Aronietis is a Policy Analyst at the International Transport Forum at the OECD, where he contributes to transport research and policy analysis work. Previously he has worked as a senior researcher in the Department of Transport and Regional Economics at the University of Antwerp. In 2013 he defended his PhD on the topic of "Successful Development and Implementation of Transport Policy Innovations". His work experience includes Transport market analyst work in Road Transport Administration of Latvia. He graduated from Riga Technical University masters programme in logistics entrepreneurship and transport economy in 2004.',
         'picture' => 'RB_speakers_Raimonds_Aronietis.png',
+    ],
+    [
+        'name' => 'Normunds Krūmiņš',
+        'position' => 'Chairman of the Board, Latvian Logistics Association',
+        'about' => 'Normunds Krūmiņš is the Chairman of the Board of Latvian Logistics Association from March, 2013. The main tasks of organization are lobbying, consultations and professional training in the logistics field. Normunds Krūmiņš has participated in several Government organized working groups (Customs, Taxation, Transport, Logistics) and did different studies in Logistics field (including Logistics Performance Index, Trade and Transport Facilitation in Baltic countries e.t.c.). Previously he was Partner and CEO in the container and intermodal transportation company INTERMODAL Ltd, Partner and Consultant in Logistikas partneri Ltd. Normunds Krūmiņš has wide experience in international logistics projects. 
+He holds the Bachelor degree in economic science from Riga Technical University and gives lectures in the field of logistics. He is Certified European Logistics specialist, Customs clearance specialist and  Certified quality manager.',
+        'picture' => 'RB_speakers_color_Normunds_Krumins.png',
     ],
     [
         'name' => 'Nauris Kļava',

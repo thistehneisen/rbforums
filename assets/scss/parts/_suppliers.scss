@@ -40,12 +40,20 @@ section.suppliers {
             }
 
             h3 {
-                padding: 50px 0 45px;
+                padding: 50px 0 0;
                 color: #5d5d5d;
                 font-family: MyriadPro, sans-serif;
                 font-weight: bold;
                 font-size: 30px;
                 text-transform: uppercase;
+            }
+
+            header {
+                padding-bottom: 45px;
+            }
+
+            .help-block {
+                padding: 20px 0 0;
             }
 
             .entry {

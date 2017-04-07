@@ -175,33 +175,36 @@ class AppController extends BaseController {
     }
 
     public function registerTwo() {
-        $validatorConfig = [
-            'salutation' => 'required',
-            'last_name'  => 'required',
-            'first_name' => 'required',
-            'email'      => 'required|email',
-            'phone'      => 'required',
-            'company'    => 'required',
-            'industry'   => 'required',
-            'position'   => 'required',
-            'country'    => 'required',
-            'city'       => 'required',
-        ];
+        $response['success'] = 'ok'; // nu ko, botiņi, reģistrējaties :D Muahahahahahaaaaa :D
+        if(1==2) {
+            $validatorConfig = [
+                'salutation' => 'required',
+                'last_name'  => 'required',
+                'first_name' => 'required',
+                'email'      => 'required|email',
+                'phone'      => 'required',
+                'company'    => 'required',
+                'industry'   => 'required',
+                'position'   => 'required',
+                'country'    => 'required',
+                'city'       => 'required',
+            ];
 
-        $validator           = new Validator( $validatorConfig );
-        $response['success'] = 'fail';
-        if ( $validator->execute( Input::all() ) ) {
-            ( new Form2() )->create( array_merge( Input::all(), [
-                'ip'       => Request::ip(),
-                'agent'    => Request::agent(),
-                'pubstamp' => time(),
-                'info_stand' => 0, // disabled info stand
-                'cs_visit' => 0, // disabled excursion
-            ] ) );
+            $validator           = new Validator( $validatorConfig );
+            $response['success'] = 'fail';
+            if ( $validator->execute( Input::all() ) ) {
+                ( new Form2() )->create( array_merge( Input::all(), [
+                    'ip'       => Request::ip(),
+                    'agent'    => Request::agent(),
+                    'pubstamp' => time(),
+                    'info_stand' => 0, // disabled info stand
+                    'cs_visit' => 0, // disabled excursion
+                ] ) );
 
-            $response['success'] = 'ok';
-        } else {
-            $response['errors'] = $validator->getErrors();
+                $response['success'] = 'ok';
+            } else {
+                $response['errors'] = $validator->getErrors();
+            }
         }
 
         return Response::json( $response );
