@@ -18,10 +18,10 @@
                 <span>Register for Day 1<br>
                 <strong>Please, use your unique registration code</strong></span>
             </a>
-            <?php /** <a href="#" data-form="day2">
-                <span>Register for Day 2</span>
-            </a> */
-            ?>
+            <a href="#" data-form="day2">
+                <span>Register for Day 2<br>
+                <strong>The registration is closed. The number of participants has been exceeded!</strong></span>
+            </a>
             <div class="clearfix"></div>
         </div>
 
@@ -116,7 +116,7 @@
                     <p>If you are interested to participate in Day 2, please register for it in addition <a href="#" class="form-2-jump">here</a>.</p>
                 </div>
             </div> <!-- form1 -->
-            <?php /*
+
             <div class="form off" id="form2">
                 <h2>Registration closing date April 9, 2017</h2>
                 <div class="intro">
@@ -135,7 +135,7 @@
 
                 <?= Form::open(); ?>
                 <div class="col-wrap">
-                    <div class="col">
+                    <div class="col disabled">
                         <div class="short">
                             <?= Form::label( 'form2-salutation', 'Salutation *' ); ?>
                             <?= Form::select( 'salutation', $salutation, old( 'salutation'), ['data-validate' => "require", 'id'=> 'form2-salutation']); ?>
@@ -177,7 +177,7 @@
                             I apply for the on-the-spot visit to the Riga Central Railway Station. Registration closed. The limit has been reached.
                         </label>
                     </div>
-                    <div class="col">
+                    <div class="col disabled">
                         <?= Form::label( 'form2-company', 'Company / Organization *' ); ?>
                         <?= Form::text( 'company', old( 'company' ) , ['data-validate' => "require", 'id'=> 'form2-company']); ?>
 
@@ -200,7 +200,7 @@
                     </div>
                     <div class="clearfix"></div>
                 </div><!-- .col-wrap -->
-                <?= Form::button('register-form2', 'Register', ['class' => 'button register']);?>
+                <?= Form::button('register-form2', 'Register', ['class' => 'button register', 'disabled' => 'disabled']);?>
                 <?= Form::close(); ?>
 
                 <div class="thanks off">
@@ -209,7 +209,6 @@
                         We will get back to you as soon as possible!</p>
                 </div>
             </div> <!-- form2 -->
-            */ ?>
 
 
         </div> <!-- forms -->
