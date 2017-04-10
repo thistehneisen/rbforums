@@ -4,6 +4,7 @@
  * @var array $title
  * @var array $industry
  * @var array $country
+ * @var bool $form1close
  */
 ?>
 <section class="registration" id="registration">
@@ -14,9 +15,13 @@
 
     <div class="content">
         <div class="buttons">
-            <a href="#" class="active" data-form="day1">
+            <a href="#" class="active <?=($form1close ? 'closed' : '');?>" data-form="day1">
                 <span>Register for Day 1<br>
+                    <?php if($form1close) :?>
+                    <strong>The registration is closed. The number of participants has been exceeded!</strong></span>
+                    <?php else :?>
                 <strong>Please, use your unique registration code</strong></span>
+                <?php endif;?>
             </a>
             <a href="#" data-form="day2">
                 <span>Register for Day 2<br>
@@ -36,14 +41,19 @@
 
                 <?= Form::open(); ?>
                 <div class="col-wrap">
-                    <div class="col">
+                    <div class="col <?=($form1close ? 'disabled' : '');?>">
                         <div class="short">
                             <?= Form::label( 'registration_code', 'Registration code' ); ?>
                             <?= Form::text( 'registration_code', old( 'registration_code' ), ['maxlength' => '8']); ?>
                         </div>
                         <div class="shorter">
                             <label>&nbsp;</label>
-                            <?= Form::button( 'validate', 'Validate', [ 'class' => 'validate-code' ] ); ?>
+                            <?php $validateButtonParams = [ 'class' => 'validate-code' ];
+                            if($form1close) {
+                                $validateButtonParams['disabled'] = 'disabled';
+                            }
+                            ?>
+                            <?= Form::button( 'validate', 'Validate',  $validateButtonParams); ?>
                         </div>
                     </div>
                     <div class="clearfix"></div>

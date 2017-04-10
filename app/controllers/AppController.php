@@ -43,11 +43,14 @@ class AppController extends BaseController {
         'Ž',
     ];
 
+    private $regOneClose = false;
+
     public function __construct() {
         parent::__construct();
         View::share( 'shareImg', URL::to( '/assets/img/rb-share2.png' ) );
         View::share( 'shareTitle', Config::get( 'app.title', '' ) );
         View::share( 'shareDesc', Config::get( 'app.description', '' ) );
+        $this->regOneClose = strtotime( Config::get( 'app.reg_1_close', '11.04.2017 22:00' ) ) < time();
     }
 
     public function getIndex() {
@@ -80,39 +83,40 @@ class AppController extends BaseController {
         $data['page'] .= View::make( 'app.suppliers', [
             'industries' => $regData['industry'],
             'letters'    => $letters,
-            'companies'  => $letterCtObject->where('company like', 'A% collate utf8_bin')->groupBy('company')->orderBy('company')->get()->result(),
+            'companies'  => $letterCtObject->where( 'company like', 'A% collate utf8_bin' )->groupBy( 'company' )->orderBy( 'company' )->get()->result(),
         ] );
         $data['page'] .= View::make( 'app.location' );
 
         $data['page'] .= View::make( 'app.header' );
 
-        $data['page'] .= View::make( 'app.registration', $regData );
-        $data['page'] .= View::make( 'app.media' );
-        $data['page'] .= View::make( 'app.contacts' );
-        $data['page'] .= View::make( 'app.organizer' );
+        $regData['form1close'] = $this->regOneClose;
+        $data['page']          .= View::make( 'app.registration', $regData );
+        $data['page']          .= View::make( 'app.media' );
+        $data['page']          .= View::make( 'app.contacts' );
+        $data['page']          .= View::make( 'app.organizer' );
 
         return $this->layout->add( 'content', View::make( 'app.index', $data ) );
     }
 
     public function getSuppliers() {
-        $type = Input::get('type', 'alphabet');
-        $key = Input::get('key', 'A');
+        $type      = Input::get( 'type', 'alphabet' );
+        $key       = Input::get( 'key', 'A' );
         $suppliers = null;
-        if($type == 'alphabet') {
-            $suppliers = (new Suppliers())->where('company like', $key . '% collate utf8_bin')->groupBy('company')->orderBy('company')->get()->result();
+        if ( $type == 'alphabet' ) {
+            $suppliers = ( new Suppliers() )->where( 'company like', $key . '% collate utf8_bin' )->groupBy( 'company' )->orderBy( 'company' )->get()->result();
         } else {
-            $suppliers = (new Suppliers())->where('industry', $key)->groupBy('company')->orderBy('company')->get()->result();
+            $suppliers = ( new Suppliers() )->where( 'industry', $key )->groupBy( 'company' )->orderBy( 'company' )->get()->result();
         }
         $html = '';
-        if(!$suppliers->isEmpty()) {
+        if ( ! $suppliers->isEmpty() ) {
             foreach ( $suppliers as $supplier ) {
-                $html .= '<p><strong>'.$supplier->company.'</strong><br>'.($supplier->industry == 'hide' ? '' : $supplier->industry). '</p>';
+                $html .= '<p><strong>' . $supplier->company . '</strong><br>' . ( $supplier->industry == 'hide' ? '' : $supplier->industry ) . '</p>';
             }
         } else {
 
         }
 
-        return Response::json(['success' => 'ok', 'html' => $html]);
+        return Response::json( [ 'success' => 'ok', 'html' => $html ] );
     }
 
     public function getExit() {
@@ -123,7 +127,7 @@ class AppController extends BaseController {
     public function validate() {
         $code           = trim( strtoupper( Input::get( 'code' ) ) );
         $response['ok'] = 'ney';
-        if ( $code ) {
+        if ( $code && ! $this->regOneClose ) {
             $response['ok'] = ( ( new Codes() )->where( 'content', $code )->where( 'used', 0 )->count() > 0 ? 'ok' : 'ney' );
         }
 
@@ -131,44 +135,46 @@ class AppController extends BaseController {
     }
 
     public function registerOne() {
-        $validatorConfig = [
-            'salutation'        => 'required',
-            'last_name'         => 'required',
-            'first_name'        => 'required',
-            'registration_code' => 'required|trim',
-            'email'             => 'required|email',
-            'phone'             => 'required',
-            'company'           => 'required',
-            'industry'          => 'required',
-            'position'          => 'required',
-            'country'           => 'required',
-            'city'              => 'required',
-        ];
-
-        $validator           = new Validator( $validatorConfig );
         $response['success'] = 'fail';
-        if ( $validator->execute( Input::all() ) ) {
-            $code = ( new Codes() )->where( 'content', strtoupper( Input::get( 'registration_code' ) ) )->where( 'used', 0 )->get()->row();
-            if ( ! $code->isEmpty() ) {
-                $code->used     = 1;
-                $code->pubstamp = time();
-                $code->ip       = Request::ip();
-                $code->save();
+        if ( ! $this->regOneClose ) {
+            $validatorConfig = [
+                'salutation'        => 'required',
+                'last_name'         => 'required',
+                'first_name'        => 'required',
+                'registration_code' => 'required|trim',
+                'email'             => 'required|email',
+                'phone'             => 'required',
+                'company'           => 'required',
+                'industry'          => 'required',
+                'position'          => 'required',
+                'country'           => 'required',
+                'city'              => 'required',
+            ];
 
-                ( new Form1() )->create( array_merge( Input::all(), [
-                    'ip'       => Request::ip(),
-                    'agent'    => Request::agent(),
-                    'pubstamp' => time(),
-                    'code_id'  => $code->id,
-                ] ) );
+            $validator = new Validator( $validatorConfig );
+            if ( $validator->execute( Input::all() ) ) {
+                $code = ( new Codes() )->where( 'content', strtoupper( Input::get( 'registration_code' ) ) )->where( 'used', 0 )->get()->row();
+                if ( ! $code->isEmpty() ) {
+                    $code->used     = 1;
+                    $code->pubstamp = time();
+                    $code->ip       = Request::ip();
+                    $code->save();
 
-                $response['success'] = 'ok';
+                    ( new Form1() )->create( array_merge( Input::all(), [
+                        'ip'       => Request::ip(),
+                        'agent'    => Request::agent(),
+                        'pubstamp' => time(),
+                        'code_id'  => $code->id,
+                    ] ) );
 
+                    $response['success'] = 'ok';
+
+                } else {
+                    $response['errors'] = [ 'registration_code' => 'Registration code used or not valid' ];
+                }
             } else {
-                $response['errors'] = [ 'registration_code' => 'Registration code used or not valid' ];
+                $response['errors'] = $validator->getErrors();
             }
-        } else {
-            $response['errors'] = $validator->getErrors();
         }
 
         return Response::json( $response );
@@ -176,7 +182,7 @@ class AppController extends BaseController {
 
     public function registerTwo() {
         $response['success'] = 'ok'; // nu ko, botiņi, reģistrējaties :D Muahahahahahaaaaa :D
-        if(1==2) {
+        if ( 1 == 2 ) {
             $validatorConfig = [
                 'salutation' => 'required',
                 'last_name'  => 'required',
@@ -194,11 +200,11 @@ class AppController extends BaseController {
             $response['success'] = 'fail';
             if ( $validator->execute( Input::all() ) ) {
                 ( new Form2() )->create( array_merge( Input::all(), [
-                    'ip'       => Request::ip(),
-                    'agent'    => Request::agent(),
-                    'pubstamp' => time(),
+                    'ip'         => Request::ip(),
+                    'agent'      => Request::agent(),
+                    'pubstamp'   => time(),
                     'info_stand' => 0, // disabled info stand
-                    'cs_visit' => 0, // disabled excursion
+                    'cs_visit'   => 0, // disabled excursion
                 ] ) );
 
                 $response['success'] = 'ok';
