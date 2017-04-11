@@ -50,7 +50,7 @@ $suppliers = [
     [ 'Ernst & Young Baltic SIA', 'Consulting', 'Latvia' ],
     [ 'ERR', 'Media and information services', 'Estonia' ],
     [ 'Estonian Railways Ltd', 'Transportation, logistics and storage', 'Estonia' ],
-    [ 'Europejskie Konsorcjum Kolejowe WAGON Sp. z o.o.', 'Transportation, logistics and storage', 'Poland' ],
+    [ 'Europejskie Konsorcjum Kolejowe WAGON Sp. z o.o.', 'Manufacturing, production industry', 'Poland' ],
     [ 'Eurovia Lietuva PLC ', 'Construction', 'Lithuania' ],
     [ 'FIMA SIA', 'Construction', 'Latvia' ],
     [ 'FIMA UAB', 'IT and communications', 'Lithuania' ],

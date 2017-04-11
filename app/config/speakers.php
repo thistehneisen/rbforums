@@ -26,15 +26,15 @@ Māris Kučinskis has graduated the Department of Management and Economic Inform
 Before joining the Government he served as CEO and later also as a member of the Board of Directors at the state-controlled oil terminal operator, SE Klaipėdos Nafta. During his term as CEO of Klaipėdos Nafta, Rokas Masiulis was in charge of the implementation of LNG terminal project. LNG terminal has started its operation in December 2014. He was also CEO of Lithuania‘s natural gas trading company LITGAS and Director of Business Development as well as Finance of LEO LT, an electricity holding company. For 14 years Rokas Masiulis held a number of senior positions at Energy practices of “Arthur Andersen” and “Ernst & Young“. His regional focus covered Lithuania, Latvia, Estonia, Belarus, Russia, and Kazakhstan. Minister Masiulis holds a degree in International Relations and Political Science as well as Master’s degree in Economics from Vilnius University.',
         'picture' => 'RB_speakers_color_Rokas-Masiulis-2.png',
     ],
-    [
-        'name' => 'Andrzej Adamczyk',
-        'position' => 'Minister of Infrastructure and Construction, Republic of Poland',
-        'about' => 'On November, 16th, 2015 appointed for the position of Minister of Infrastructure and Construction.
-Since 2005 Andrzej Adamczyk has been a Member of Parliament for the V, VI, VII and VIII terms of office. Long-term deputy chairman of the Parliamentary Committee of Infrastructure and member of the Commission for Poles Abroad. He participated at the work of subcommittees on construction as well as spatial and housing management, on monitoring the use of EU funds and on land transport.
-Andrzej Adamczyk specializes in construction issues, as well as road and rail infrastructure. In parliament he dealt with, inter alia, the governmental draft law on road companies of special purpose, the amendment of the "Construction Law" and draft law on simplification of the investment process in housing. He actively participated at the work on the amendment of the law on housing cooperatives. As the councilor of the Cracow county for two terms of office, he chaired the Infrastructure Committee.
-Andrzej Adamczyk has a university degree. He is a member of the Małopolska Chamber of Civil Engineers.',
-        'picture' => 'RB_speakers_color_Adamczyk_Andrzej.png',
-    ],
+//    [
+//        'name' => 'Andrzej Adamczyk',
+//        'position' => 'Minister of Infrastructure and Construction, Republic of Poland',
+//        'about' => 'On November, 16th, 2015 appointed for the position of Minister of Infrastructure and Construction.
+//Since 2005 Andrzej Adamczyk has been a Member of Parliament for the V, VI, VII and VIII terms of office. Long-term deputy chairman of the Parliamentary Committee of Infrastructure and member of the Commission for Poles Abroad. He participated at the work of subcommittees on construction as well as spatial and housing management, on monitoring the use of EU funds and on land transport.
+//Andrzej Adamczyk specializes in construction issues, as well as road and rail infrastructure. In parliament he dealt with, inter alia, the governmental draft law on road companies of special purpose, the amendment of the "Construction Law" and draft law on simplification of the investment process in housing. He actively participated at the work on the amendment of the law on housing cooperatives. As the councilor of the Cracow county for two terms of office, he chaired the Infrastructure Committee.
+//Andrzej Adamczyk has a university degree. He is a member of the Małopolska Chamber of Civil Engineers.',
+//        'picture' => 'RB_speakers_color_Adamczyk_Andrzej.png',
+//    ],
     [
         'name' => 'Herald Ruijters',
         'position' => 'Director for Investment, Innovative and Sustainable Transport, DG MOVE, EU Commission',
@@ -48,6 +48,14 @@ Herald Ruijters holds degrees from Nijmegen and Amsterdam Universities in both F
         'position' => 'The European Coordinator, the North Sea-Baltic TEN-T Corridor',
         'about' => 'Catherine Trautmann has been acting as the European Coordinator for the North Sea-Baltic TEN-T Corridor since 29 October 2014. Born in Strasbourg, France, she became active in local and national politics in the early 1980s. She was elected Mayor of Strasbourg in 1989-1997 and subsequently became Minister for Culture and Communications in 1997-2000. She served as Member of the European Parliament in the years 1989-1997 and again in 2004-2014 as President of the French Socialist Delegation in the European Parliament.',
         'picture' => 'RB_speakers_color_Catherine_Trautmann.png',
+    ],
+    [
+        'name' => 'Edvīns Bērziņš',
+        'position' => 'Chairman of the Supervisory Board, RB Rail AS',
+        'about' => 'Edvīns Bērziņš has MA in Law and MBA degree of the Norwegian–Latvian Professional Master Programme "Innovations and Entrepreneurship" (Riga Technical University, RTU). In 2016, he has graduated the Professional Board Member Education Program at the Baltic Institute of Corporate Governance (BICG).
+He has been Head of International Relations Department in the Police Academy of Latvia, has worked as Legal Consultant at "Lattelecom" ltd., Head of Legal Department in "Latvijas kuģniecība AS", has been Member of the Board at "Latvijas kuģniecība AS". Since 2011, he is a member of the Board at "Latvijas dzelzceļš" VAS. During 2015, Mr. Bērziņš took the position of Interim CEO of the joint venture "RB Rail AS" (project Rail Baltica) and now holds the position of the Chairman of the Supervisory Board at "RB Rail AS". Since 2016, he acts as Chairman of the Board at SJSC Latvijas dzelzceļš.
+He is also Vice-President of the Employers\' Confederation of Latvia (LDDK), Presidium Member at the Latvian Chamber of Commerce and Industry (LCCI), Member of the RTU Advisory Board, Council Member of the LCCI, Chairman of Latvia-Belarus and Latvia-Kazakhstan Councils of Business Cooperation, as well as Member of the Councillors’ Convent and Member of Law Faculty Dome at Turiba University.',
+        'picture' => 'RB_speakers_color_Edvins_Berzins.png',
     ],
     [
         'name' => 'Baiba A. Rubesa',
@@ -117,6 +125,12 @@ Dins Merirands has an academic master’s degree in legal science, as well as an
         'about' => 'Philippe Citroën joined UNIFE in 2011 as Director General. He began his career as Transport Advisor at the French Permanent Representation to the EU and then became Member of the Cabinet of the French Transport Minister. In 1993 he became Manager and Chief of Staff at RATP Paris, and joined the SNCF as Strategy Director in 1999. Prior to assuming his position at UNIFE, he served for 8 years as CEO of Systra, one of the world’s leading public transport engineering companies. 
 Philippe Citroën is a graduate of Paris II University in Public Law, holds a Diploma from the Paris Institute of Political Studies (Sciences Po) and also studied at the Ecole Nationale d\'Administration (ENA), where he also lectured about Rail and Urban Transport.',
         'picture' => 'RB_speakers_color_Philippe_Citroen.png',
+    ],
+    [
+        'name' => 'Kristjan Kaunissaare',
+        'position' => 'Rail Baltic Estonia coordinator, Ministry of Economic Affairs and Communications of Estonia',
+        'about' => 'Since 2016 Kristjan Kaunissaare is Rail Baltic coordinator in Ministry of Economics Affairs and Communication of Estonia. Previously since 2013 he has worked as Advisor to the CEO, development manager of tram services/deputy director of tram services department at Tallinna Linnatranspordi AS. Kristjan Kaunissaare gained experience working at Tallinn Transport Department as well in Estonian Railway Administration.',
+        'picture' => 'RB_speakers_color_Kristjan_Kaunissaare.png',
     ],
     [
         'name' => 'Raimonds Aronietis',
