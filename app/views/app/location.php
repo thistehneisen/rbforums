@@ -74,7 +74,7 @@
                 </div>
                 <div class="col">
                     <h3>Working language</h3>
-                    <p>Day 1 - <span class="hl">English, Latvian with simultaneous translation</span><br>
+                    <p>Day 1 - <span class="hl">English, Latvian, Polish with simultaneous translation</span><br>
                         Day 2 - <span class="hl">English</span>
                     </p>
                 </div>
