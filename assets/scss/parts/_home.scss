@@ -64,11 +64,19 @@ section {
                 display: block;
                 box-sizing: border-box;
                 color: #FFFFFF;
-                font-size: 15px;
+                font-size: 20px;
                 position: relative;
-                padding: 12px 75px 12px 23px;
+                padding: 12px 75px 12px 35px;
                 font-weight: normal;
                 margin-bottom: 30px;
+                font-style: italic;
+
+                span {
+                    display: inline-block;
+                    padding-top: 20px;
+                    font-size: 15px;
+                    font-style: normal;
+                }
 
                 &:before, &:after {
                     content: '';
@@ -88,8 +96,7 @@ section {
                     background: transparent url(../img/play-button.png) 0 0 no-repeat;
                     width: 45px;
                     height: 45px;
-                    top: 50%;
-                    transform: translateY(-50%);
+                    top: 10px;
                     right: 15px;
                 }
             }
@@ -99,7 +106,7 @@ section {
         .nav-buttons {
             text-align: right;
             position: absolute;
-            bottom: 135px;
+            bottom: 95px;
             left: 50%;
             width: 550px;
             transform: translateX(-100%);

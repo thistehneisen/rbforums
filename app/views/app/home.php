@@ -14,8 +14,10 @@
 
     <div class="about-text">
         <div class="play">
-            Live video stream from both Forum days will be accessible via this page<br>
-            as soon as the event starts. Please revisit this page and just click on a link.
+            Watch the video stream from both Forum days!<br>
+            <span>Ask your questions to the speakers. Send them to the moderator
+from wherever you are via interactive digital platform <a href="https://app.sli.do/?search=" target="_blank"><img src="<?= URL::to( 'assets/img/slido.png' );?>" alt=""></a><br>
+using code RBGF2017. Questions cannot exceed 160 characters.</span>
         </div>
         <p>“Rail Baltica project provides opportunities that must be seen today, to be able to use them tomorrow. It is a unique, large-scale and complex trans-national infrastructure project to form the new economic corridor, which will closely connect the North East of Europe with the rest of the Union. Hope to see you in Riga in April! We can bring the best ideas, practice and solutions together to link nations, people, and places.”</p>
 
