@@ -338,6 +338,21 @@ $(function () {
             key: $(this).data('letter')
         });
     });
+
+    $(document).on('click', '.close-embed', function (event) {
+        event.preventDefault();
+        $(this).parent().empty().remove();
+    });
+
+    $('.virtual-click').click(function (event) {
+        event.preventDefault();
+        if($('.embed-code').length > 0) {
+            return false;
+        }
+
+        $('#home').prepend('<div class="embed-code"><a href="#" class="close-embed">&times;</a><iframe width="800" height="500" src="http://embed.ls.lv/nordic/index.html" allowfullscreen style="border: 0px transparent;"></iframe></div>');
+
+    });
 });
 
 function getSuppliers(options) {

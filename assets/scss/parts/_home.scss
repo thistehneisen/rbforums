@@ -71,6 +71,17 @@ section {
                 margin-bottom: 30px;
                 font-style: italic;
 
+                a.virtual-click {
+                    display: block;
+                    position: absolute;
+                    width: 45px;
+                    height: 45px;
+                    top: 10px;
+                    right: 15px;
+                    z-index: 1;
+                    background: transparent;
+                }
+
                 span {
                     display: inline-block;
                     padding-top: 20px;
@@ -132,5 +143,31 @@ section {
         background-color: rgb(57,117,228); /* Old browsers */
         background: url(../img/home-page2-new-new.png) center bottom no-repeat, linear-gradient(45deg,  rgba(57,117,228,1) 0%,rgba(57,161,228,1) 100%);
 
+    }
+}
+
+.embed-code {
+    position: absolute;
+    box-sizing: border-box;
+    top: 100px;
+    left: 50%;
+    width: 840px;
+    padding: 40px 20px 20px;
+    margin-left: -420px;
+    z-index: 100;
+    background: #ffffff;
+    box-shadow: rgba(204, 204, 204, 0.6) 7px 7px 8px, rgba(204,204,204,0.4) 0 0 8px;
+
+    .close-embed {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgba(93, 93, 93, 0.57);
+        font-size: 20px;
+        top: 10px;
+        right: 20px;
+        position: absolute;
+        &:hover {
+            color: #5d5d5d;
+        }
     }
 }
