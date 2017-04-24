@@ -1,7 +1,8 @@
-<div class="embed-code">
+<?php /* <div class="embed-code">
     <a href="#" class="close-embed">&times;</a>
     <iframe width="800" height="500" src="http://embed.ls.lv/nordic/index.html" allowfullscreen style="border: 0px transparent;"></iframe>
 </div>
+  */ ?>
 <section class="home" id="home">
     <div class="logo-container">
         <div class="moving-logo">
@@ -18,7 +19,7 @@
 
     <div class="about-text">
         <div class="play">
-            <a href="#" class="virtual-click"></a>
+            <?php /* <a href="#" class="virtual-click"></a> */ ?>
             Watch the video stream from both Forum days!<br>
             <span>Ask your questions to the speakers. Send them to the moderator
 from wherever you are via interactive digital platform <a href="https://app.sli.do/?search=" target="_blank"><img src="<?= URL::to( 'assets/img/slido.png' );?>" alt=""></a><br>
