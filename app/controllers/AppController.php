@@ -92,7 +92,7 @@ class AppController extends BaseController {
         $regData['form1close'] = $this->regOneClose;
         $data['page']          .= View::make( 'app.registration', $regData );
         $data['page']          .= View::make( 'app.media' );
-        $data['page']          .= View::make( 'app.contacts' );
+//        $data['page']          .= View::make( 'app.contacts' );
         $data['page']          .= View::make( 'app.organizer' );
 
         return $this->layout->add( 'content', View::make( 'app.index', $data ) );
