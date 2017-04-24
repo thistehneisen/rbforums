@@ -12,7 +12,7 @@
 	<title><?= Config::get( 'app.title', '' ); ?></title>
 	<meta charset="utf-8"/>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-	<link rel="stylesheet" href="/forum/assets/css/styles-059b3df55b.min.css">
+	<link rel="stylesheet" href="/forum/assets/css/styles-2203aaf30f.min.css">
 	<meta content="<?= Config::get( 'app.description', '' ) ?>" name="description"/>
 	<script type="text/javascript">
 		var BASE_URL = '<?= URI::base(); ?>';
