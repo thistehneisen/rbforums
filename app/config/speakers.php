@@ -3,7 +3,8 @@
         'name'     => 'Māris Kučinskis',
         'position' => 'Prime Minister of the Republic of Latvia',
         'about'    => 'Māris Kučinskis is Prime Minister of Latvia since 11 February 2016. Previously he was the Member of the 12th Saeima, where he was the Chairman of Sustainable Development Commission. He has took the position of Minister for Regional Development and Local Governments and was a Member of the 11th, 10th, 9th and 8th Saeima. Māris Kučinskis has also served as Executive Director of Latvian Large Cities Association and was Chairman of Valmiera District Council and City Council.
-Māris Kučinskis has graduated the Department of Management and Economic Information in University of Latvia.',
+Māris Kučinskis has graduated the Department of Management and Economic Information in University of Latvia.
+View the welcoming address at the Rail Baltica Global Forum 2017 <a href="'.URL::to('assets/presentation/Kucinskis_uzruna.pdf').'" target="_blank">here</a>.',
         'picture'  => 'RB_speakers_color_Maris_Kucinskis.png',
     ],
     [
@@ -15,7 +16,8 @@ Māris Kučinskis has graduated the Department of Management and Economic Inform
     [
         'name'     => 'Uldis Augulis',
         'position' => 'Minister of Transport, Republic of Latvia',
-        'about'    => 'Uldis Augulis was appointed as the Minister of Transport of Latvia on February  11, 2016. Before, Augulis held the post of Minister for Welfare and was a Member of the 12th, 11th, 10th and 9th term in the national parliament (Saeima). Previously Minister Augulis was a Chairman of the Central Land Commission, Parliamentary Secretary of the Ministry of Welfare and the Ministry of Agriculture, as well as held other leading positions in public and private organizations. Uldis Augulis has graduated University of Latvia, Finance Management Faculty.
+        'about'    => 'Uldis Augulis was appointed as the Minister of Transport of Latvia on February  11, 2016. Before, Augulis held the post of Minister for Welfare and was a Member of the 12th, 11th, 10th and 9th term in the national parliament (Saeima). Previously Minister Augulis was a Chairman of the Central Land Commission, Parliamentary Secretary of the Ministry of Welfare and the Ministry of Agriculture, as well as held other leading positions in public and private organizations. Uldis Augulis has graduated University of Latvia, Finance Management Faculty
+        View the speech (in Latvian) at the Rail Baltica Global Forum 2017 <a href="'.URL::to('assets/presentation/Augulis_uzruna.pdf').'" target="_blank">here</a>.
 ',
         'picture'  => 'RB_speakers_color_Uldis-Augulis.png',
     ],
@@ -71,7 +73,8 @@ He is also Vice-President of the Employers\' Confederation of Latvia (LDDK), Pre
         'about'    => 'Baiba A. Rubesa is an experienced international manager in a range of business areas:  oil and gas, retail, automotive and telecommunications.  She has lived and worked in Canada, Germany, Czechoslovakia, Latvia, Lithuania, Estonia, Azerbaijan, Georgia, Turkmenistan and Norway. 
 Since October 2015 Rubesa is Chairperson of the Management Board and CEO of RB Rail AS. In January 2017 she was appointed a Supervisory Board member to Latvia’s largest company, Latvenergo. Prior to that she worked as a consultant and new business developer in her own company, RFactor Sia, and served as a Supervisory Board member for Citadeles banka. She has also driven a business agenda as the global Vice President, Corporate Social Responsibility for Statoil ASA, Government and Public Affairs & HSE director for Statoil in the Caspian region, Managing Director for Latvija Statoil SIA and Marketing Director, Statoil Baltic States.
 Rubesa has served as a Supervisory Board member, DNB NORD banka, Chaired the Foreign Investors Council in Latvia, been a Vice President of the Latvian Chamber of Commerce in Latvia. Currently she serves on the Supervisory Board of the think tank “Providus” and in the foundation Kokneses Fonds to support the development of the Memorial Site “Likteņdārzs”.
-Rubesa was educated in Toronto, Canada at York University and Shaw colleges.
+Rubesa was educated in Toronto, Canada at York University and Shaw colleges
+View the presentation “Rail Baltica – a new economic corridor” <a href="'.URL::to('assets/presentation/Rubesa_presentation.ppsx').'" target="_blank">here</a>.
 ',
         'picture'  => 'RB_speakers_color_Baiba_Rubesa.png',
     ],
@@ -156,7 +159,8 @@ He holds the Bachelor degree in economic science from Riga Technical University 
     [
         'name'     => 'Nauris Kļava',
         'position' => 'Partner, Ernst & Young Baltic Ltd',
-        'about'    => 'Nauris Kļava joined EY Latvia in 2002 and since 2016 he is a Partner in EY Latvia Advisory Services department with a wide range of experience in banking and financial services, utilities and transportation. His main areas of specialization are feasibility evaluation; cost benefit analysis; development of strategic (policy) documents; preparation of feasibility studies; risk management consultations and business process analysis. Nauris Kļava has a Master’s degree in Public Administration from University of Latvia and Bachelor’s degree in Business Administration and Economics from Stockholm School of Economics in Riga. He is also a Member of Association of Chartered Certified Accountants (ACCA) and a Prince2 registered Project Management Practitioner.',
+        'about'    => 'Nauris Kļava joined EY Latvia in 2002 and since 2016 he is a Partner in EY Latvia Advisory Services department with a wide range of experience in banking and financial services, utilities and transportation. His main areas of specialization are feasibility evaluation; cost benefit analysis; development of strategic (policy) documents; preparation of feasibility studies; risk management consultations and business process analysis. Nauris Kļava has a Master’s degree in Public Administration from University of Latvia and Bachelor’s degree in Business Administration and Economics from Stockholm School of Economics in Riga. He is also a Member of Association of Chartered Certified Accountants (ACCA) and a Prince2 registered Project Management Practitioner.
+        VView the presentation “The Rail Baltica Global Project Cost-Benefit Analysis” <a href="'.URL::to('assets/presentation/Nauris_Klava_RB_Forum.pdf').'" target="_blank">here</a>',
         'picture'  => 'RB_speakers_color_Nauris_Klava.png',
     ],
     [
