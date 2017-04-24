@@ -109,12 +109,12 @@ Dins Merirands has an academic master’s degree in legal science, as well as an
         'about'    => 'Emile Quinet is both an academic scholar, author of about 20 books and 300 articles, communications and research reports, and an international expert in transport, public economics and management of public and semi-public organizations. He participated in many consultancies on project assessment, feasibility studies and strategic master plans as well as recommendations on productivity studies and regulation procedures of public undertakings, both for specific countries and for international organizations (especially in France, Algeria, India, Italy, the UK, and for UNO, OECD, the World Bank). He recently achieved a report to the French Government on “Cost benefit assessment of public investment in France” (Paris, Commissariat Général à la Stratégie et à la Prospective), which was implemented in official guidelines.',
         'picture'  => 'RB_speakers_color_Emile-Quinet.png',
     ],
-    [
-        'name'     => 'Andrew Rees',
-        'position' => 'Chief Economist, HS2 Ltd',
-        'about'    => 'Andrew Rees joined HS2 Ltd in December 2015 and leads their economic and commercial analysis teams.  He is responsible for ensuring that economic case supporting the legislative process is robust, for using commercial analysis to help shape key investment decisions, and for identifying insights which help secure wider local economic benefits from HS2.  He joined HS2 Ltd from Macquarie Securities where he was on secondment as Chief Economist to their European division.  Previously, his career was in the UK government economic service, most recently in the Business Department where he had a spell as Acting Chief Economist, and led the analysis on industrial strategy, competition policy and merger control. ',
-        'picture'  => 'RB_speakers_color_Andrew_Rees.png',
-    ],
+//    [
+//        'name'     => 'Andrew Rees',
+//        'position' => 'Chief Economist, HS2 Ltd',
+//        'about'    => 'Andrew Rees joined HS2 Ltd in December 2015 and leads their economic and commercial analysis teams.  He is responsible for ensuring that economic case supporting the legislative process is robust, for using commercial analysis to help shape key investment decisions, and for identifying insights which help secure wider local economic benefits from HS2.  He joined HS2 Ltd from Macquarie Securities where he was on secondment as Chief Economist to their European division.  Previously, his career was in the UK government economic service, most recently in the Business Department where he had a spell as Acting Chief Economist, and led the analysis on industrial strategy, competition policy and merger control. ',
+//        'picture'  => 'RB_speakers_color_Andrew_Rees.png',
+//    ],
     [
         'name'     => 'Jorma Härkönen',
         'position' => 'Director of LIMOWA Logistics Centre Cluster, Finland',
