@@ -104,13 +104,17 @@ Dins Merirands has an academic master’s degree in legal science, as well as an
     [
         'name'     => 'Jakub Kapturzak',
         'position' => 'Deputy Director of Department of Railway Transport, Ministry of Infrastructure and Construction of Republic of Poland',
-        'about'    => 'Jakub Kapturzak have graduated the Faculty of Law from Adam Mickiewicz University and attended National School of Public Administration in Warsaw. Since 2004 he have worked in Ministry of Finance, first as Senior Expert then as Head of Unit. In Ministry of Finance he was engaged in financing the transport sector. Since 2010 Jakub Kapturzak is Deputy Director of Railway Department responsible among others for international affairs and passenger service, however in 2014-2016 he was a Managing Director of North Sea - Baltic Rail Freight Corridor.',
+        'about'    => 'Jakub Kapturzak have graduated the Faculty of Law from Adam Mickiewicz University and attended National School of Public Administration in Warsaw. Since 2004 he have worked in Ministry of Finance, first as Senior Expert then as Head of Unit. In Ministry of Finance he was engaged in financing the transport sector. Since 2010 Jakub Kapturzak is Deputy Director of Railway Department responsible among others for international affairs and passenger service, however in 2014-2016 he was a Managing Director of North Sea - Baltic Rail Freight Corridor.
+        
+        <strong>View the presentation “Rail Baltica in Poland - infrastructure and logistics development” <a href="'.URL::to('assets/presentation/6_Jakub_Kapturzak.pptx').'" target="_blank">here</a></strong>.',
         'picture'  => 'RB_speakers_color_jakub_kapturzak.png',
     ],
     [
         'name'     => 'Emile Quinet',
         'position' => 'Associate Member, Ecole des Ponts – ParisTech, France',
-        'about'    => 'Emile Quinet is both an academic scholar, author of about 20 books and 300 articles, communications and research reports, and an international expert in transport, public economics and management of public and semi-public organizations. He participated in many consultancies on project assessment, feasibility studies and strategic master plans as well as recommendations on productivity studies and regulation procedures of public undertakings, both for specific countries and for international organizations (especially in France, Algeria, India, Italy, the UK, and for UNO, OECD, the World Bank). He recently achieved a report to the French Government on “Cost benefit assessment of public investment in France” (Paris, Commissariat Général à la Stratégie et à la Prospective), which was implemented in official guidelines.',
+        'about'    => 'Emile Quinet is both an academic scholar, author of about 20 books and 300 articles, communications and research reports, and an international expert in transport, public economics and management of public and semi-public organizations. He participated in many consultancies on project assessment, feasibility studies and strategic master plans as well as recommendations on productivity studies and regulation procedures of public undertakings, both for specific countries and for international organizations (especially in France, Algeria, India, Italy, the UK, and for UNO, OECD, the World Bank). He recently achieved a report to the French Government on “Cost benefit assessment of public investment in France” (Paris, Commissariat Général à la Stratégie et à la Prospective), which was implemented in official guidelines.
+        
+        <strong>View the presentation “Transport infrastructure impact on economic geography, development, connectivity: the international experience” <a href="'.URL::to('assets/presentation/2_Emile_Quinet.pptx').'" target="_blank">here</a></strong>.',
         'picture'  => 'RB_speakers_color_Emile-Quinet.png',
     ],
 //    [
@@ -122,20 +126,26 @@ Dins Merirands has an academic master’s degree in legal science, as well as an
     [
         'name'     => 'Jorma Härkönen',
         'position' => 'Director of LIMOWA Logistics Centre Cluster, Finland',
-        'about'    => 'Jorma Härkönen, M.Sc (econ), has a long business experience of logistics and international trade both in logistics and paper industry, both in Finland and the UK. For about 10 years Härkönen has been leading LIMOWA Association which is Finnish neutral, nationwide logistics development cluster. LIMOWA is focused especially in logistics nodal points, intermodal connections and transport corridors. LIMOWA is also very much involved with the technological development of intralogistics sector. Härkönen is a member of Finland’s Central Chamber of Commerce Transport committee. He was also awarded a Logistician of the Year prize this year by Finland’s Logistics Association.',
+        'about'    => 'Jorma Härkönen, M.Sc (econ), has a long business experience of logistics and international trade both in logistics and paper industry, both in Finland and the UK. For about 10 years Härkönen has been leading LIMOWA Association which is Finnish neutral, nationwide logistics development cluster. LIMOWA is focused especially in logistics nodal points, intermodal connections and transport corridors. LIMOWA is also very much involved with the technological development of intralogistics sector. Härkönen is a member of Finland’s Central Chamber of Commerce Transport committee. He was also awarded a Logistician of the Year prize this year by Finland’s Logistics Association.
+        
+        <strong>View the presentation “Finnish Business opportunities with Rail Baltica” <a href="'.URL::to('assets/presentation/Harkonen_presentation.pdf').'" target="_blank">here</a></strong>.',
         'picture'  => 'RB_speakers_color_Jorma-Harkonen.png',
     ],
     [
         'name'     => 'Dominique Deau',
         'position' => 'Retired railway expert, former Development Director of NExTEO SNCF Réseau and SNCF Mobilités, France',
-        'about'    => 'Dominique Deau is a railwayman, having mainly a background in railway operation and economic assessment. From 2010 to January 2017 he has been in charge of NExTEO project whose main objective is to improve line capacity and journey times in Paris suburban area. Previously he has been head of Atlantic TGV business unit, then head of SNCF investment department. From 1994 to 1999 Dominique Deau joined the CTRL project in London (Channel Tunnel Rail Link), dealing mainly with performances - journey time, capacity, station track layout. He was also given the responsibility for the economic assessment of several HSL (Paris – Lille, Paris – Brussels – Cologne / Amsterdam, London – Paris / Brussels) ; as well he performed abroad two 6 week assignments in South Korea and Taïwan. He started his career joining SNCF in 1978 in the South of France, then was station master in St Germain des Fossés, worked at Modane and in Paris South-East control centre. He has also worked in SNCF Research Department where he produced a computer program (RIHO) giving the fastest train timetable available from any station to any station in France in less than 5 seconds.',
+        'about'    => 'Dominique Deau is a railwayman, having mainly a background in railway operation and economic assessment. From 2010 to January 2017 he has been in charge of NExTEO project whose main objective is to improve line capacity and journey times in Paris suburban area. Previously he has been head of Atlantic TGV business unit, then head of SNCF investment department. From 1994 to 1999 Dominique Deau joined the CTRL project in London (Channel Tunnel Rail Link), dealing mainly with performances - journey time, capacity, station track layout. He was also given the responsibility for the economic assessment of several HSL (Paris – Lille, Paris – Brussels – Cologne / Amsterdam, London – Paris / Brussels) ; as well he performed abroad two 6 week assignments in South Korea and Taïwan. He started his career joining SNCF in 1978 in the South of France, then was station master in St Germain des Fossés, worked at Modane and in Paris South-East control centre. He has also worked in SNCF Research Department where he produced a computer program (RIHO) giving the fastest train timetable available from any station to any station in France in less than 5 seconds.
+        
+        <strong>View the presentation “Benefits of high speed rail in France” <a href="'.URL::to('assets/presentation/Deau_presentation.pdf').'" target="_blank">here</a></strong>.',
         'picture'  => 'RB_speakers_color_Dominique_Deau.png'
     ],
     [
         'name'     => 'Philippe Citroën',
         'position' => 'Director General, UNIFE',
         'about'    => 'Philippe Citroën joined UNIFE in 2011 as Director General. He began his career as Transport Advisor at the French Permanent Representation to the EU and then became Member of the Cabinet of the French Transport Minister. In 1993 he became Manager and Chief of Staff at RATP Paris, and joined the SNCF as Strategy Director in 1999. Prior to assuming his position at UNIFE, he served for 8 years as CEO of Systra, one of the world’s leading public transport engineering companies. 
-Philippe Citroën is a graduate of Paris II University in Public Law, holds a Diploma from the Paris Institute of Political Studies (Sciences Po) and also studied at the Ecole Nationale d\'Administration (ENA), where he also lectured about Rail and Urban Transport.',
+Philippe Citroën is a graduate of Paris II University in Public Law, holds a Diploma from the Paris Institute of Political Studies (Sciences Po) and also studied at the Ecole Nationale d\'Administration (ENA), where he also lectured about Rail and Urban Transport.
+
+<strong>View the presentation "High speed rail infrastructure as a platform for digitalization and innovation. Recommendations for Rail Baltica" <a href="'.URL::to('assets/presentation/Citroen_presentation.pdf').'" target="_blank">here</a></strong>.',
         'picture'  => 'RB_speakers_color_Philippe_Citroen.png',
     ],
     [
@@ -147,14 +157,18 @@ Philippe Citroën is a graduate of Paris II University in Public Law, holds a Di
     [
         'name'     => 'Raimonds Aronietis',
         'position' => 'Policy Analyst, International Transport Forum at the OECD',
-        'about'    => 'Dr. Raimonds Aronietis is a Policy Analyst at the International Transport Forum at the OECD, where he contributes to transport research and policy analysis work. Previously he has worked as a senior researcher in the Department of Transport and Regional Economics at the University of Antwerp. In 2013 he defended his PhD on the topic of "Successful Development and Implementation of Transport Policy Innovations". His work experience includes Transport market analyst work in Road Transport Administration of Latvia. He graduated from Riga Technical University masters programme in logistics entrepreneurship and transport economy in 2004.',
+        'about'    => 'Dr. Raimonds Aronietis is a Policy Analyst at the International Transport Forum at the OECD, where he contributes to transport research and policy analysis work. Previously he has worked as a senior researcher in the Department of Transport and Regional Economics at the University of Antwerp. In 2013 he defended his PhD on the topic of "Successful Development and Implementation of Transport Policy Innovations". His work experience includes Transport market analyst work in Road Transport Administration of Latvia. He graduated from Riga Technical University masters programme in logistics entrepreneurship and transport economy in 2004.
+        
+        <strong>View the presentation “Passenger demand forecast and opportunities for Rail Baltica” <a href="'.URL::to('assets/presentation/Aronietis_presentation.pdf').'" target="_blank">here</a></strong>.',
         'picture'  => 'RB_speakers_Raimonds_Aronietis.png',
     ],
     [
         'name'     => 'Normunds Krūmiņš',
         'position' => 'Chairman of the Board, Latvian Logistics Association',
         'about'    => 'Normunds Krūmiņš is the Chairman of the Board of Latvian Logistics Association from March, 2013. The main tasks of organization are lobbying, consultations and professional training in the logistics field. Normunds Krūmiņš has participated in several Government organized working groups (Customs, Taxation, Transport, Logistics) and did different studies in Logistics field (including Logistics Performance Index, Trade and Transport Facilitation in Baltic countries e.t.c.). Previously he was Partner and CEO in the container and intermodal transportation company INTERMODAL Ltd, Partner and Consultant in Logistikas partneri Ltd. Normunds Krūmiņš has wide experience in international logistics projects. 
-He holds the Bachelor degree in economic science from Riga Technical University and gives lectures in the field of logistics. He is Certified European Logistics specialist, Customs clearance specialist and  Certified quality manager.',
+He holds the Bachelor degree in economic science from Riga Technical University and gives lectures in the field of logistics. He is Certified European Logistics specialist, Customs clearance specialist and  Certified quality manager.
+
+<strong>View the presentation “Baltic Business opportunities with Rail Baltica” <a href="'.URL::to('assets/presentation/RB_conf_Apr2017_Normunds.pdf').'" target="_blank">here</a></strong>.',
         'picture'  => 'RB_speakers_color_Normunds_Krumins.png',
     ],
     [
@@ -168,7 +182,9 @@ He holds the Bachelor degree in economic science from Riga Technical University 
     [
         'name'     => 'Oskars Redbergs',
         'position' => 'Architect, educator and curator, PhD cand. of Brandenburgische Technische Universität, Germany',
-        'about'    => 'Oskars Redbergs\' main research focus is on the transformation of urban landscape in Northern European cities. He is guest lecturer at Aalto University and Tallinn University of Technology, Member of the board of the Latvian Architectural Association and a co-founder of the Hilbig Institute Riga. Head of the Rail Baltica Urban Impacts project.',
+        'about'    => 'Oskars Redbergs\' main research focus is on the transformation of urban landscape in Northern European cities. He is guest lecturer at Aalto University and Tallinn University of Technology, Member of the board of the Latvian Architectural Association and a co-founder of the Hilbig Institute Riga. Head of the Rail Baltica Urban Impacts project.
+        
+        <strong>View the presentation “Rail Baltica Urban Impacts: improved city planning in a connected region” <a href="'.URL::to('assets/presentation/Redbergs_presentation.pdf').'" target="_blank">here</a></strong>.',
         'picture'  => 'RB_speakers_color_Oskars-Redbergs.png',
     ],
     [
@@ -179,7 +195,8 @@ He holds the Bachelor degree in economic science from Riga Technical University 
 Emils Rode received MBA degree from Goizueta Business School at Emory University in Atlanta, USA as a Fulbright Scholar. His work experience includes a period as a consultant with the Boston Consulting Group.
 In recent years he has been working on a series of projects financed by the EU Interreg programme, aimed at cooperation and joint planning among Baltic Sea nations, such as LogOn Baltic, Basaar, Expat, Live Baltic, Culturability BSR, EmpInno, etc.
 Emils Rode is a senior expert at Live Baltic Campus project, of which he was one of the initiators. This project, running from 2015 to 2017, is about jointly developing best practice in planning university campuses as hubs of knowledge in Sweden, Finland, Estonia, and Latvia.
-',
+
+<strong>View the presentation “Urbanisation of knowledge economy in the Baltic Region” <a href="'.URL::to('assets/presentation/Rode_presentation.pdf').'" target="_blank">here</a></strong>.',
         'picture'  => 'RB_speakers_color_emils_rode.png',
     ],
     [
@@ -187,7 +204,9 @@ Emils Rode is a senior expert at Live Baltic Campus project, of which he was one
         'position' => 'Director of the Baltic Region, AECOM',
         'about'    => 'Since 2007, Arnis Kākulis has served as the Director of the Baltic Region for AECOM.  His focus is to direct complex project engagements with various business sector clients specifically in strategic planning and design management. He is also currently the AECOM Transportation business line leader in the Baltics. His clients have included Ministry of Transportation of the Republic of Latvia, Ministry of Transport and Communication of the Republic of Lithuania, Estonian Technical Surveillance Authority, Barclays Bank PLC, Microsoft Corporation, Pfizer, TK Development, Kempinski, Towers Construction Management, and AFI Europe.
 His daily activities include strategic planning & advisory consulting, process design, program/project management, stakeholder relations, design & construction.
-Arnis Kākulis earned both his Master of Architecture and Master in Urban Planning at the University of Wisconsin-Milwaukee School of Architecture and Urban Planning. He received his Bachelor of Science in Architectural Studies at the University of Wisconsin-Milwaukee as well. His skills in facilitation, strategic planning, programming and process design provide the requisite background to assist and enable clients to make informed decisions about their real estate and infrastructure assets.',
+Arnis Kākulis earned both his Master of Architecture and Master in Urban Planning at the University of Wisconsin-Milwaukee School of Architecture and Urban Planning. He received his Bachelor of Science in Architectural Studies at the University of Wisconsin-Milwaukee as well. His skills in facilitation, strategic planning, programming and process design provide the requisite background to assist and enable clients to make informed decisions about their real estate and infrastructure assets.
+
+<strong>View the presentation “Passenger mobility in the Baltics - a catalyst for regional cohesion” <a href="'.URL::to('assets/presentation/Kaakulis_presentation.pdf').'" target="_blank">here</a></strong>.',
         'picture'  => 'RB_speakers_color_arnis_kakulis.png',
     ],
     [
