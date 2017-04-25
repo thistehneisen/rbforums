@@ -29,7 +29,7 @@
 
 <?= $content; ?>
 
-<script src="/forum/assets/js/app-8339e90913.min.js"></script>
+<script src="/forum/assets/js/app-df249d2a7c.min.js"></script>
 
 <?= Asset::GA( Config::get( 'app.ga_code' ) ); ?>
 </body>

@@ -383,7 +383,7 @@
 	            return false;
 	        }
 	
-	        $('#home').prepend('<div class="embed-code"><a href="#" class="close-embed">&times;</a><iframe width="800" height="500" src="http://embed.ls.lv/nordic/index.html" allowfullscreen style="border: 0px transparent;"></iframe></div>');
+	        $('#home').prepend('<div class="embed-code"><a href="#" class="close-embed">&times;</a><iframe width="800" height="500" src="http://embed.ls.lv/nordic/index2.html" allowfullscreen style="border: 0px transparent;"></iframe></div>');
 	    });
 	});
 	
